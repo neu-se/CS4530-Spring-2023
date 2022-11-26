@@ -47,6 +47,9 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+          CANVAS_TOKEN: ${{secrets.CANVAS_TOKEN}}
+          CANVAS_COURSE_ID: ${{secrets.CANVAS_COURSE_ID}}
+          CANVAS_BASE_URL: ${{ secrets.CANVAS_BASE_URL }}
           JEKYLL_NO_BUNDLER_REQUIRE: true
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
