@@ -6,6 +6,19 @@ nav_order: 7
 has_children: true
 ---
 
+## Grading
+There will be individual projects (previously known as assignments) and a team project (in a group of 3-4). The overall grading breakdown is:
+* 30% Individual project (10% for deliverable 1, 20% for deliverable 2)
+* 40% Team project (including peer evaluation)
+* 10% Participation in synchronous, in-class activities
+* 20% Exam
+
+**Assignment of team project grades:** In cases where team members do not equally contribute to the project, we may assign different grades to different individuals, up to an extreme of deducting 50% of the team project grade for a student. We will evaluate each individual's contribution on the basis of a variety of factors, including progress reports at weekly meetings, through inspecting version control history, through each students' self-reflection, and through each students' peer evaluation {during and/or} at the end of the project. We will make regular efforts to collect and distribute this feedback throughout the project — our ultimate goal is for all students to participate and receive full marks.
+
+**Assignment of final grades:** Although each instructor will use the same lesson plans and assignments, we expect that there may be variation in grades when compared between sections. Hence, each instructor will assign final grades to students in their sections, and reserve the right to apply different curves than are used by the other instructors. With each graded assignment, students will be provided with the distribution of all grades in their section.
+
+**Grading grievances:** If you have concerns regarding the grading of your work, please let us know *right away* by opening a regrade request in Gradescope. All regrade requests must be submitted within 7 days from your receipt of the graded work. If your regrade request is closed and you feel that the response was not satisfactory, you may appeal to the instructor via email within 48 hours.
+
 ## Homework policy 
 
 Students must work individually on all homework assignments. We encourage you to have high-level discussions with other students in the class about the assignments, however, we require that when you turn in an assignment, it is only your work. That is, copying any part of another student's assignment is strictly prohibited, and repercussions for doing so will be severe (up to and including failing the class outright). You are free to reuse small snippets of example code found on the Internet (e.g. via StackOverflow) provided that it is attributed. If you are concerned that by reusing and attributing that copied code it may appear that you didn't complete the assignment yourself, then please raise a discussion with the instructor.
@@ -28,19 +41,6 @@ If you join class in person, you are strongly encouraged to bring your laptop or
 
 If you are registered for an on-the-ground section but do not feel comfortable or are unable to attend in person, please contact your instructor in advance of class.
 We would like to provide the best and most comfortable learning experience, and encourage you to stay at home if advised by a medical professional.
-
-## Grading
-There will be an individual and a team project (in a group of 3-4). The overall grading breakdown is:
-* 30% Individual project (10% for deliverable 1, 20% for deliverable 2)
-* 40% Team project (including peer evaluation)
-* 10% Participation in synchronous, in-class activities
-* 20% Exam
-
-**Assignment of team project grades:** In cases where team members do not equally contribute to the project, we may assign different grades to different individuals, up to an extreme of deducting 50% of the team project grade for a student. We will evaluate each individual's contribution on the basis of a variety of factors, including progress reports at weekly meetings, through inspecting version control history, through each students' self-reflection, and through each students' peer evaluation {during and/or} at the end of the project. We will make regular efforts to collect and distribute this feedback throughout the project — our ultimate goal is for all students to participate and receive full marks.
-
-**Assignment of final grades:** Although each instructor will use the same lesson plans and assignments, we expect that there may be variation in grades when compared between sections. Hence, each instructor will assign final grades to students in their sections, and reserve the right to apply different curves than are used by the other instructors. With each graded assignment, students will be provided with the distribution of all grades in their section.
-
-**Grading grievances:** If you have concerns regarding the grading of your work, please let us know *right away* by opening a regrade request in Gradescope. All regrade requests must be submitted within 7 days from your receipt of the graded work. If your regrade request is closed and you feel that the response was not satisfactory, you may appeal to the instructor via email within 48 hours.
 
 ## Debugging
 One of the objectives of this class is to provide students with experiences writing new code for large, existing codebases.
