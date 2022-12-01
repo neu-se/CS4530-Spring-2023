@@ -25,7 +25,7 @@ deadlines:
       content: tp4
 dates:
   firstMonday: 2023/01/09
-  numWeeks: 14
+  numWeeks: 15
 types:
   default:
     className: lesson
