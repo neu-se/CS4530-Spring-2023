@@ -7,9 +7,9 @@ has_children: true
 ---
 
 ## Grading
-There will be individual projects (previously known as assignments) and a team project (in a group of 3-4). The overall grading breakdown is:
+There will be individual projects (previously known as assignments) and a team project (in a group of 3-4 members). The overall grading breakdown is:
 * 30% Individual project (10% for deliverable 1, 20% for deliverable 2)
-* 40% Team project (including peer evaluation)
+* 40% Team project (including peer evaluations / surveys)
 * 10% Participation in synchronous, in-class activities
 * 20% Exam
 
