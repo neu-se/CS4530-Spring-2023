@@ -3,33 +3,46 @@
 # Each key has a "name" attribute (rendered on the calendar), a "page" attribute (which contains a link to the lesson) and an optional "type" attribute, which is a key into the _data/config.yml "types" dictionary.
 1a:
   name: Orientation & Requirements
-  page: 
+  page: /modules/1-requirements-testing
 1b:
   name: Test Driven Development
+  page: /modules/2-requirements-to-code
 2a:
   name: Code-Level Design Principles
+  page: /modules/3-code-level-design-principles
 2b:
   name: Design Patterns
+  page: /modules/4-interaction-level-design-patterns
 3a:
   name: Concurrency Patterns
+  page: /modules/5-concurrency-patterns-in-typescript
 3b:
   name: Software Process
+  page: /modules/6-software-process
 4a:
   name: Intro to React
+  page: /modules/7-react
 4b:
   name: Patterns of React
+  page: /modules/8-patterns-of-react
 5a:
   name: Distributed Systems Principles & Requirements
+  page: /modules/9-distributed-principles
 5b:
   name: Distributed Systems Architectures
+  page: /modules/10-distributed-architectures
 6a:
   name: What Makes a Good Test Suite?
+  page: /modules/11-good-tests
 6b:
   name: Tests with Larger Scope
+  page: /modules/12-larger-tests
 7a:
   name: Principles for Cloud Deployment
+  page: /modules/13-cloud-infrastructure
 7b:
   name: Continuous Development
+  page: /modules/14-continuous-development
 8a:
   name: Work on project (Discuss project plan revisions)
 8b:
@@ -38,18 +51,20 @@
   name: Midterm
 9b:
   name: Security
+  page: /modules/15-security
 10a:
-  name: Work on project
-10b:
   name: Technical Debt
+  page: /modules/16-technical-debt 
+10b:
+  name: Work on project
 11a:
-  name: Work on Project
-11b:
   name: Open Source
-12a:
+  page: /modules/17-open-source
+11b:
   name: Work on Project
 12b:
   name: Ethics
+  page: /modules/18-equitable-software
 13a:
   name: Work on Project
 13b:
@@ -63,21 +78,26 @@ advanced:
 ip1:
   name: Individual Project Milestone 1
   type: deadline
+  page: /assignments/ip1
 ip2:
   name: Individual Project Milestone 2 
   type: deadline
+  page: /assignments/ip2
 tp1:
   name: Project Formation
   type: deadline
 tp2:
   name: Preliminary Project Plan
   type: deadline
+  page: /assignments/project-plan
 tp3:
   name: Revised Project Plan
   type: deadline
+  page: /assignments/revised-project-plan
 tp4:
   name: Project Final Deliverable
   type: deadline
+  page: /assignments/project-deliverable
 veteransday:
   name: Veteran's Day (No class)
   type: holiday
@@ -86,18 +106,6 @@ thanksgiving:
   type: holiday
 indigenous:
   name: Indigenous Peoples Day (No class)
-  type: holiday
-mlkday:
-  name: MLK Day (No class)
-  type: holiday
-presidentsday:
-  name: President's Day (No class)
-  type: holiday
-springbreak:
-  name: Spring Break (No class)
-  type: holiday
-patriotsday:
-  name: Patriots Day (No class)
   type: holiday
 teamMeetings:
   name: Team Meetings
