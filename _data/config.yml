@@ -19,13 +19,13 @@ deadlines:
     Wed:
       date: 2023/03/01 11:00am
       content: tp3
-  '13':
+  '14':
     Wed:
       date: 2023/04/12 11:00am
       content: tp4
 dates:
   firstMonday: 2023/01/09
-  numWeeks: 14
+  numWeeks: 15
 types:
   default:
     className: lesson
