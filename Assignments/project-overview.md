@@ -15,17 +15,18 @@ Covey.Town is inspired by existing products like [Gather.Town](https://gather.to
 All implementation will take place in the TypeScript programming language, using React for the user interface.
 
 
-Select projects from Spring 2022 are hosted [in our project showcase](https://neu-se.github.io/CS4530-Spring-2022/assignments/project-showcase).
+Select projects from Fall 2022 are hosted [in our project showcase](https://neu-se.github.io/CS4530-Fall-2022/assignments/project-showcase).
 
 
 ### Overview of Project Deliverables
 
 | Date | Deliverable | Description | 
 | -----| ----------- | ----------- |
-| MM/DD/23| Team Formation Survey | Specify preferences for teammates |
-| MM/DD/23 | [Preliminary Project Plan]({{ site.baseurl }}{% link Assignments/project-plan.md %}) | Propose a new feature for Covey.Town that can be planned and implemented within 7 weeks |
-| MM/DD/23 | [Revised Project Plan]({{ site.baseurl }}{% link Assignments/revised-project-plan.md %}) | Refine the scope of your feature based on staff feedback, define detailed requirements and project acceptance criteria. |
-| MM/DD/23 | Project Implementation and Documentation | Deliver your new feature, including design documentation and tests |
+| 02/01/23| Team Formation Survey | Specify preferences for teammates |
+| 02/07/23| Project Kick-off Meeting | Schedule a meeting with your Mentor TA during this week |
+| 02/15/23 | [Preliminary Project Plan]({{ site.baseurl }}{% link Assignments/project-plan.md %}) | Propose a new feature for Covey.Town that can be planned and implemented within 7 weeks |
+| 03/01/23 | [Revised Project Plan]({{ site.baseurl }}{% link Assignments/revised-project-plan.md %}) | Refine the scope of your feature based on staff feedback, define detailed requirements and project acceptance criteria. |
+| 04/12/23 | Project Implementation and Documentation | Deliver your new feature, including design documentation and tests |
 
 ### Summary of Project Grading
 Your overall project grade (which will account for 40% of your final grade in this course) will be the weighted average of each of the deliverables.
@@ -33,8 +34,8 @@ Your overall project grade (which will account for 40% of your final grade in th
 * Planning (20%)
   * This includes the Preliminary Project Plan and the Revised Project Plan.
 * Process (20%)
-  * This includes: use of a structured development process, including code reviews,  timely completion of weekly progress reports and team surveys, and weekly meetings with TA Mentor.
-  * This also includes appropriate division of labor within the project.  For full credit, each member of the team must have at least 4 commits in the final delivered code.
+  * This includes: use of a structured development process, including code reviews, timely completion of weekly progress reports and team surveys, and weekly meetings with TA Mentor.
+  * This also includes appropriate division of labor within the project (i.e., roughly equal). For full credit, each member of the team must have at least 4 commits in the final delivered code.
 * Product (40%)
   * 20% Successful delivery of your Minimum Viable Product as defined in your project plan
   * 10% Additional delivered features
@@ -45,7 +46,7 @@ Your overall project grade (which will account for 40% of your final grade in th
 
   
 In cases where team members do not equally contribute to the project, we may assign different grades to different individuals, up to an extreme of deducting 50% of the team project grade for a student.
-We will evaluate each individual's contribution on the basis of a variety of factors, including progress reports at weekly meetings, through inspecting version control history, through each students' self-reflection, and through each students' peer evaluation (during and/or) at the end of the project.
+We will evaluate each individual's contribution on the basis of a variety of factors, including progress reports at weekly meetings, through inspecting version control history, through each students' self-reflection, and through each students' peer evaluations (during and/or at the end of the project).
 We will make regular efforts to collect and distribute this feedback throughout the project — our ultimate goal is for all students to participate and receive full marks.
 
 ### Team Formation
@@ -57,7 +58,7 @@ All students in each team must be in the same section of the class.
 
 ### Team Meetings with TA Mentor
 Each team will be assigned a TA to act as a mentor, who will also serve as your point of contact for project grading.
-During the week of MM/DD-DD, you will have a "Kickoff Meeting" with your TA mentor, where you will meet your TA mentor and have the opportunity to share any early ideas that you might want feedback on before submitting the your preliminary project plan.
+During the week of 02/06-12, you will have a "Kickoff Meeting" with your TA mentor, where you will meet your TA mentor and have the opportunity to share any early ideas that you might want feedback on before submitting the your preliminary project plan.
 Once project begins in full force, you will have weekly meetings with your TA mentor (scheduled at your team's and the TA's convenience) in order to help ensure that you are making progress on the project, and to help address problems that you encounter (be they technical or non-technical problems).
 
 ###  Preliminary Project Plan
@@ -73,9 +74,7 @@ The project plan will focus on two sections:
 * Work breakdown: Map your user stories to engineering tasks. Assign each task to a team member (or pair of team members), provide an estimate for how long each task will take, a rationale for that estimate, and schedule those stories into sprints.
 
 ### Creating a GitHub Repository
-Your team's development must take place within a private GitHub repository in our GitHub Classroom. To create your repository, each member of your team should follow these instructions:
-1. Sign in to [GitHub.com](https://www.github.com/), and then [use our invitation to create a repository with the covey.town codebase](https://classroom.github.com/a/hB4zVIzE). Check to see if one of your groupmates has created a group already - if so, select it to join it. Otherwise, you should enter your group number (e.g. "Group 777") as the team name. 
-2. Refresh the page, and it will show a link to your new repository, for example: `https://github.com/neu-cs4530/spring23-team-project-group-777`. Click the link to navigate to your new repository. This is the repository you will use for the project.
+Your team's development must take place within a private GitHub repository in our GitHub Classroom. We will provide further instructions later.
 
 This repository will be private, and visible only to your team and the course staff. After the semester ends, you are welcome to make it public - you have complete administrative control of the repository.
 
@@ -106,4 +105,4 @@ Accompanying the final team deliverable will be an *individual reflection*, whic
 * The software engineering processes that you feel could have been improved in your project: were there any procesess that in hindsight, you wish that you followed, or wish that you followed better?
 * Your team dynamic: Provide a frank (and ideally, blameless) postmortem of your and your teammates collaborative performance and participation. If you had to do this same project over with the same teammates, what would *you* have done differently (or not) to improve your team's overall performance?
 
-The details for the final project deliverable will be released by MM/DD.
+The details for the final project deliverable will be released by Week 12.
