@@ -3,7 +3,7 @@ layout: page
 title: Typescript Basics
 permalink: /tutorials/week2-typescript-basics
 parent: Tutorials
-nav_order: 2
+nav_order: 3
 ---
 
 # Typescript Basics
