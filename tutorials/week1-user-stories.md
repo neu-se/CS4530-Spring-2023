@@ -13,13 +13,12 @@ Contents:
 * [User Stories and Test-Driven Development](#user-stories-and-test-driven-development)
 * [Examples](#examples)
 
-If you run into any difficulties following any of these steps, please post (in a non-private question) on Piazza.
 
 # User Stories and Conditions of Satisfaction
 
-A user story is an informal, general explanation of a software feature written from the perspective of the end user or customer. 
+A user story is an informal, general explanation of a software feature written from the perspective of the **end user or customer**. 
 
-As a <role> I can <perform action> so that I can <receive benefit>
+As a <code>&lt;role&gt;</code> I can <code>&lt;perform action&gt;</code> so that I can <code>&lt;receive benefit&gt;</code>
 
 User stories represent something the user/customer might want. There will be many ways to give the user/customer the benefit that they want.
 
@@ -32,11 +31,11 @@ There still may be many ways to implement a COS. For example, a COS probably wou
 
 # User Stories and Project Planning
 
-In planning a project, need to assign priorities to each user story and COS. Priorities tell us the order in which COS and their associated engineering tasks should be addressed, and how much effort should be devoted to each of them. 
+In planning a project, need to assign priorities to each user story and Condition of Satisfaction. Priorities tell us the order in which COS and their associated engineering tasks should be addressed, and how much effort should be devoted to each of them. 
 There are many ways to describe priorities. For example, a user story might be described as Essential, Desirable, or Extension:
-* Essential means the project is useless without it.
-* Desirable means the project is less usable without it, but is still usable.
-* Extension describes a User story or COS that is desirable, but may not be achievable within the scope of the project.
+* **Essential** means the project is useless without it.
+* **Desirable** means the project is less usable without it, but is still usable.
+* **Extension** describes a User story or COS that is desirable, but may not be achievable within the scope of the project.
 
 # User Stories and Test-Driven Development
 
@@ -72,7 +71,8 @@ As a player in covey.town, I want to learn different strategies for connect4, so
 * When one player wins (or there is a draw), both players are notified of the result. (Essential)
 * When a player makes a move in the Connect4 game, the tile visibly drops onto the game board, and a suitable sound effect is emitted (Extension)
 * If other players enter a Connect4 area while a game is going on, they can see the status of the game also (Desirable)
-[Note: these COSs do not describe the game board in detail, though that is pretty standard. They also do not describe what happens to the two players when the game is over. Do they stay in the area and spectate? Do the next two players play? Does the first spectator play the winner of the game? etc. etc.]
+
+[**Note:** these COSs do not describe the game board in detail, though that is pretty standard. They also do not describe what happens to the two players when the game is over. Do they stay in the area and spectate? Do the next two players play? Does the first spectator play the winner of the game? etc. etc.]
 * There should be a way for one player to challenge another to play the game of Connect4, no matter where they are in the town. (This might be an Extension, or it might be a different user story).
 
 ### For User Story #3:
@@ -82,4 +82,4 @@ As a player in covey.town, I want to learn different strategies for connect4, so
 * The leaderboard should show the lifetime standings of all the players who have ever logged in to this town. (Extension)
 
 
-[References](https://www.simplilearn.com/tutorials/agile-scrum-tutorial/user-stories#how_to_write_user_stories)
+[Reference](https://www.simplilearn.com/tutorials/agile-scrum-tutorial/user-stories#how_to_write_user_stories)
