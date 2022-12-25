@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Typescript Basics
-permalink: /tutorials/week2-typescript-basics
+permalink: /tutorials/week1-typescript-basics
 parent: Tutorials
-nav_order: 3
+nav_order: 2
 ---
 
 # Typescript Basics

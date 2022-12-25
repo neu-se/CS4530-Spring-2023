@@ -3,15 +3,15 @@ layout: page
 title: User Stories and Conditions of Satisfaction
 permalink: /tutorials/week1-user-stories
 parent: Tutorials
-nav_order: 2
+nav_order: 3
 ---
 This tutorial provides examples for user stories, consitions of satisafation and how a minimum viable product can be defined.
 
 Contents:
 * [User Stories and Conditions of Satisfaction](#user-stories-and-conditions-of-satisfaction)
 * [User Stories and Project Planning](#user-stories-and-project-planning)
-* [User Stories and Test-Driven Development](#getting-started-with-typescript)
-* [Examples](#)
+* [User Stories and Test-Driven Development](#user-stories-and-test-driven-development)
+* [Examples](#examples)
 
 If you run into any difficulties following any of these steps, please post (in a non-private question) on Piazza.
 
@@ -66,18 +66,18 @@ As a player in covey.town, I want to learn different strategies for connect4, so
 
 ## Conditions of Satisfaction:
 ### For User Story #2:
-There should be a Conncect4 area in the town, where players can play Connect4. (Essential)
-Whenever there are two players in the same Connect4 area, a Connect4 game is started between them. (Essential)
-The status of the Connect4 game is presented in graphical form on the screen (Essential).
-When one player wins (or there is a draw), both players are notified of the result. (Essential)
-When a player makes a move in the Connect4 game, the tile visibly drops onto the game board, and a suitable sound effect is emitted (Extension)
-If other players enter a Connect4 area while a game is going on, they can see the status of the game also (Desirable)
-[Note: these COSs do not describe the game board in detail, though that is pretty standard.  They also do not describe what happens to the two players when the game is over.   Do they stay in the area and spectate?  Do the next two players play? Does the first spectator play the winner of the game? Etc. etc.]
-There should be a way for one player to challenge another to play the game of Connect4, no matter where they are in the town. (This might be an Extension, or it might be a different user story).
+* There should be a Conncect4 area in the town, where players can play Connect4. (Essential)
+* Whenever there are two players in the same Connect4 area, a Connect4 game is started between them. (Essential)
+* The status of the Connect4 game is presented in graphical form on the screen (Essential).
+* When one player wins (or there is a draw), both players are notified of the result. (Essential)
+* When a player makes a move in the Connect4 game, the tile visibly drops onto the game board, and a suitable sound effect is emitted (Extension)
+* If other players enter a Connect4 area while a game is going on, they can see the status of the game also (Desirable)
+[Note: these COSs do not describe the game board in detail, though that is pretty standard. They also do not describe what happens to the two players when the game is over. Do they stay in the area and spectate? Do the next two players play? Does the first spectator play the winner of the game? etc. etc.]
+* There should be a way for one player to challenge another to play the game of Connect4, no matter where they are in the town. (This might be an Extension, or it might be a different user story).
 ### For User Story #3:
-There should be a leaderboard showing the Connect4 ranking of all the players in the town. (Essential).
-The leaderboard should show the current score of all the Connect4 games currently in progress. (Desirable)
-The leaderboard should show the current score of all the Connect4 games currently in progress, and any player can click on the entry for a game and spectate that game. (Desirable; might be Extension, depending on the expertise of the team).
-The leaderboard should show the lifetime standings of all the players who have ever logged in to this town. (Extension)
+* There should be a leaderboard showing the Connect4 ranking of all the players in the town. (Essential).
+* The leaderboard should show the current score of all the Connect4 games currently in progress. (Desirable)
+* The leaderboard should show the current score of all the Connect4 games currently in progress, and any player can click on the entry for a game and spectate that game. (Desirable; might be Extension, depending on the expertise of the team).
+* The leaderboard should show the lifetime standings of all the players who have ever logged in to this town. (Extension)
 
 - [References](https://www.simplilearn.com/tutorials/agile-scrum-tutorial/user-stories#how_to_write_user_stories)
