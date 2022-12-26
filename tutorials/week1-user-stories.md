@@ -37,6 +37,9 @@ There are many ways to describe priorities. For example, a user story might be d
 * **Desirable** means the project is less usable without it, but is still usable.
 * **Extension** describes a User story or COS that is desirable, but may not be achievable within the scope of the project.
 
+## Minimum Viable Product (MVP)
+An MVP is a product that consists of all essential user stories. Developers should prioritize those above others. 
+
 # User Stories and Test-Driven Development
 
 We model the development process as a cycle of refinements:
