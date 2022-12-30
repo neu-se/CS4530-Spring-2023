@@ -20,7 +20,7 @@ If you run into any difficulties following any of these steps, please post (in a
 
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-For this class, you will need Node.js version 16 (16.17 is the latest version at time of writing, although any 16.x should work in theory). 
+For this class, you will need Node.js version 16 (16.17 was the latest version at time of writing which was updated to 16.19, although any 16.x should work in theory). 
 There are many ways that you can install Node.js: for instance, you can use a package manager like
 `snap` or `homebrew` to install it; you can download an installer directly from the Node.js website, and you can,
 of course, build it from source. However, due to the complexity of running different Node.js versions on the same machine, we *very strongly* suggest using `nvm`, as explained below.
@@ -34,7 +34,7 @@ have previously installed Node.js.
 
 ## Installing NodeJS with NVM for Windows
 
-1. Download `nvm-setup.zip` from the most recent release of [nvm-windows](https://github.com/coreybutler/nvm-windows/releases) (at time of writing this document, version 1.1.9).
+1. Download `nvm-setup.zip` from the most recent release of [nvm-windows](https://github.com/coreybutler/nvm-windows/releases) (at time of writing this document, version was 1.1.9 which is now updated to 1.1.10).
    - ![image](./assets/week1-getting-started/node/download-nvmw.png)
 2. Extract the contents of `nvm-setup.zip` and run the executable `nvm-setup.exe`.
    - This should open the nvm installation wizard.
@@ -47,8 +47,8 @@ have previously installed Node.js.
    - ![image](./assets/week1-getting-started/node/nvmw-verification.png)
 10. Run the command `nvm list available` to display all available NodeJS versions.
    - ![image](./assets/week1-getting-started/node/nvmw-list-available.png)
-11. Install the latest LTS (Long term supported, as opposed to the "development") version of Node.js available using the command `nvm install 16.13.2`.
-12. To use this version of NodeJS, run the command `nvm use 16.13.2`.
+11. Install the latest LTS (Long term supported, as opposed to the "development") version of Node.js available using the command `nvm install 16.19.0`.
+12. To use this version of NodeJS, run the command `nvm use 16.19.0`.
 13. Now, NodeJS should be installed and ready for use. To verify the installation run the below commands:
    - `node -v`
    - `npm -v`

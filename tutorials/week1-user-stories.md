@@ -66,6 +66,9 @@ As a player in covey.town, I want to see how well I’m doing at connect4 compar
 ### User Story #4: 
 As a player in covey.town, I want to learn different strategies for connect4, so I can win more games. (Extension)
 
+### User Story #5: 
+As a user of Covey.Town, I want to be able to interact with other users in different activities like private chat, playing games, etc. while providing ability to customize user avatars to make the town more fun.  (Essential but too general. Best to split it in 3 different stories one for private chat, one for games and one for customization.)
+
 ## Conditions of Satisfaction:
 ### For User Story #2:
 * There should be a Conncect4 area in the town, where players can play Connect4. (Essential)
@@ -83,6 +86,11 @@ As a player in covey.town, I want to learn different strategies for connect4, so
 * The leaderboard should show the current score of all the Connect4 games currently in progress. (Desirable)
 * The leaderboard should show the current score of all the Connect4 games currently in progress, and any player can click on the entry for a game and spectate that game. (Desirable; might be Extension, depending on the expertise of the team).
 * The leaderboard should show the lifetime standings of all the players who have ever logged in to this town. (Extension)
+
+### For User Story #5:
+* User will be able to join an interactable area which includes leaderboards for all activities (This is too general and should be split in several conditions of satisfactions. For example, joining an area itself can be independent of being able to view leaderboard. Also each activity's leaderboard should have its own condition of satisfaction. There could be several conditions for leaderboard alone to describe how data is organized)
+* User is able interact with an instance of interactable area created by another player (This COS is vague. What does interact mean? Does it mean enter an area or do something else?) 
+* User is not allowed to join an interactable area of another player in a town, if the user was not invited (Desirable)
 
 
 [Reference](https://www.simplilearn.com/tutorials/agile-scrum-tutorial/user-stories#how_to_write_user_stories)
