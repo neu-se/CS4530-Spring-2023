@@ -122,6 +122,7 @@ Below is a list of extensions that you may find useful.
 3. vscode-icons
 4. ESLint
 5. Andromeda (Color theme: Andromeda Colorizer)
+6. Jest Runner 
 
 ![image](./assets/week1-getting-started/vsc/useful-extensions.JPG)
 

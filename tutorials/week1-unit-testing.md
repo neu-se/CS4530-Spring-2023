@@ -675,6 +675,11 @@ If restarting Jest does not work, you can run the following in your VSCode by op
 
 ![Manually start Jest Runner](./assets/week1-unit-testing/vscode-jest/manual-jest-runner-start.jpg)
 
+
+### Additional Extensions and Libraries
+
+If you would like to run each test individually (and all tests in test suites colledtively), VSC extenstion called "Jest Runner" will be very useful. You can also explore [jest extended library](https://www.npmjs.com/package/jest-extended) that offers additional matchers for testing. 
+
 ## Configuration
 
 As of the latest stable version, the extension is set to run all tests whenever any change is made to the files containing the tests. You can modify the behaviour to manual execution where you can run specific test cases as and when required. This can be modified by changing the `"jest.autoRun"` setting as follows -
