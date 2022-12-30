@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Unit Testing with Jest
-permalink: /tutorials/week5-unit-testing
+permalink: /tutorials/week1-unit-testing
 parent: Tutorials
 nav_order: 4
 ---
 
-This tutorial covers the basics on unit testing with Jest. By the end of this tutorial, you will have an introduction to unit testing with jest, best practices, and some handy tricks and tips to use in your tests. Starter code is available [here](./assets/week5-unit-testing/week5-tutorial-starter-code.zip), and finished code with tests covered in this tutorial can be found [here](./assets/week5-unit-testing/week5-unit-tests.zip). We strongly recommend using the completed solution only for reference and implementing the tutorial step by step from the starter code.
+This tutorial covers the basics on unit testing with Jest. By the end of this tutorial, you will have an introduction to unit testing with jest, best practices, and some handy tricks and tips to use in your tests. Starter code is available [here](./assets/week1-unit-testing/week1-tutorial-starter-code.zip), and finished code with tests covered in this tutorial can be found [here](./assets/week1-unit-testing/week1-unit-tests.zip). We strongly recommend using the completed solution only for reference and implementing the tutorial step by step from the starter code.
 
 Contents:
 
@@ -662,18 +662,18 @@ With [vscode-jest](https://marketplace.visualstudio.com/items?itemName=Orta.vsco
 1. Visit [Jest - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) and click "Install".
 1. Allow the browser to open VSCode as shown (might be different for macOS/Linux systems) by clicking on Continue.
 
-   ![Allow browser to open VSCode](./assets/week5-unit-testing/vscode-jest/allow-browser-vscode.jpg)
+   ![Allow browser to open VSCode](./assets/week1-unit-testing/vscode-jest/allow-browser-vscode.jpg)
 1. Once VSCode is open, click on "Install".
 
 Once installed, the extension should work out of the box without any extra configuration for most of the homework handouts and project starter code.
 
 You can verify the installation by checking if the following is visible to you when you open a project which has Jest configured (VSCode restart maybe required.).
 
-![Verify Installation](./assets/week5-unit-testing/vscode-jest/verify-installation.jpg)
+![Verify Installation](./assets/week1-unit-testing/vscode-jest/verify-installation.jpg)
 
 If restarting Jest does not work, you can run the following in your VSCode by opening VSCode's command palette (`Ctrl + Shift + P` in Windows, `Cmd + Shift + P` in macOS) and run the following - "_Jest: Start All Runners_".
 
-![Manually start Jest Runner](./assets/week5-unit-testing/vscode-jest/manual-jest-runner-start.jpg)
+![Manually start Jest Runner](./assets/week1-unit-testing/vscode-jest/manual-jest-runner-start.jpg)
 
 ## Configuration
 
@@ -687,7 +687,7 @@ As of the latest stable version, the extension is set to run all tests whenever 
 
 An example of changing the extension to run in manual mode is demonstrated below -
 
-![Enable Manual Mode](./assets/week5-unit-testing/vscode-jest/disable-auto-run.gif)
+![Enable Manual Mode](./assets/week1-unit-testing/vscode-jest/disable-auto-run.gif)
 
 > NOTE - You will only be able to `Run` specific test cases as and when required only when `autoRun` is `off`. However, you'll be able to `Debug` any test cases in all available modes.
 
@@ -697,11 +697,11 @@ Once the extension is setup and confirmed to be working, we can now begin debugg
 
 You can also navigate to the specific test file manually, and you will notice some icons/action buttons in the editor next to each test. Right clicking on the icons will bring up a test-specific context menu which will have options to debug the specific test. Be sure to place breakpoints in the specific pieces of code by clicking to the left of the line numbers.
 
-![Debug Test](./assets/week5-unit-testing/vscode-jest/start-debug-test.jpg)
+![Debug Test](./assets/week1-unit-testing/vscode-jest/start-debug-test.jpg)
 
 If everything is setup correctly, the debugger in VSCode will pause at the breakpoint you set and you can check the values of the variables by hovering over the said variable. 
 
-![Debugging in Action](./assets/week5-unit-testing/vscode-jest/debugging-tests.jpg)
+![Debugging in Action](./assets/week1-unit-testing/vscode-jest/debugging-tests.jpg)
 
 
 
