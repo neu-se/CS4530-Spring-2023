@@ -1,6 +1,6 @@
 ---
 name: Ellen Arteca
 role: Teaching Assistant
-photo: 
+photo: staff/ellen_arteca.jpg
 email: arteca.e@husky.neu.edu
 ---
