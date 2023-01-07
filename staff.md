@@ -8,7 +8,7 @@ nav_order: 6
 # Staff
 
 ## Office Hours 
-All office hours will be held virtually.
+{At the moment} All TA office hours will be held virtually. We will explore the option of in-person office hours too, subject to availability of a room or interest from students/TAs. Instructor office hours may be held in-person or remotely.  
 
 Links to join the TA and instructor office hours are [posted in Canvas](https://northeastern.instructure.com/courses/133054/pages/office-hours).
 ## Instructors

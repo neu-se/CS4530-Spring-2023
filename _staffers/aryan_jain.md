@@ -1,6 +1,6 @@
 ---
 name: Aryan Jain
 role: Teaching Assistant
-photo: 
+photo: staff/aryan_jain.jpg
 email: jain.aryan@northeastern.edu
 ---

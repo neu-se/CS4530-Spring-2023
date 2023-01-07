@@ -1,6 +1,6 @@
 ---
 name: Daniel Gilligan
 role: Teaching Assistant
-photo: 
+photo: staff/daniel_gilligan.jpeg
 email: gilligan.d@northeastern.edu
 ---

@@ -1,6 +1,6 @@
 ---
 name: Vineet Alampally
 role: Teaching Assistant
-photo: 
+photo: staff/vineet_alampally.jpeg
 email: alampally.v@northeastern.edu
 ---
