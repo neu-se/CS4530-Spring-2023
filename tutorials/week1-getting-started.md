@@ -73,7 +73,7 @@ feedback, open a new terminal and trying again or restart from step 1.
 3. Run the command `npm -v`
   - This should print the current version of npm installed (v8.x.x)
 ![image](./assets/week1-getting-started/node/verification.JPG)
-4. If you find that some other version is being used, and would like to change the default to 16, run the command `nvm alias default 18`
+4. If you find that some other version is being used, and would like to change the default to 18, run the command `nvm alias default 18`
 
 # Installing Visual Studio Code (VSCode)
 
