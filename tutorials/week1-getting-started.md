@@ -34,7 +34,9 @@ have previously installed Node.js.
 
 ## Installing NodeJS with NVM for Windows
 
+
 1. Download `nvm-setup.zip` from the most recent release of [nvm-windows](https://github.com/coreybutler/nvm-windows/releases) (at time of writing this document, version was 1.1.10).
+
    - ![image](./assets/week1-getting-started/node/download-nvmw.png)
 2. Extract the contents of `nvm-setup.zip` and run the executable `nvm-setup.exe`.
    - This should open the nvm installation wizard.
@@ -47,6 +49,7 @@ have previously installed Node.js.
    - ![image](./assets/week1-getting-started/node/nvmw-verification.png)
 7.  Run the command `nvm list available` to display all available NodeJS versions.
    - ![image](./assets/week1-getting-started/node/nvmw-list-available.png)
+
 8.  Install the latest LTS (Long term supported, as opposed to the "development") version of Node.js available using the command `nvm install lts`.
 9.  To use this version of NodeJS, run the command `nvm use lts`.
 10. Now, NodeJS should be installed and ready for use. To verify the installation run the below commands:
@@ -58,6 +61,7 @@ You should see something like the following As of 1/09/23 on Windows, the most c
   
 - ![image](./assets/week1-getting-started/node/nvmw-use-16.png)
 
+
 *Troubleshooting with VSCode*: Did you follow these instructions successfully, but find a "Command not found" error when you try to run `npm` in VSCode? Try this: Close VSCode completely. Re-open it. In your command shell in VSCode, try again. We have noticed that if you have VSCode open while installing `nvm`, it is possible that VSCode will not see the new software installation until it's closed and re-opened. You can also confirm that VSCode correctly sees the NodeJS installation by running `echo %PATH%` in your windows command shell in VSCode: it should include an entry similar to `C:\Program Files\nodejs`.
 
 ## Installation Steps (Linux / Mac)
@@ -67,17 +71,17 @@ You should see something like the following As of 1/09/23 on Windows, the most c
 3. Verify nvm is working by entering `command -v nvm`. If your terminal prints
 out `nvm`, it should be working. If you see `nvm: command not found` or no
 feedback, open a new terminal and trying again or restart from step 1.
-4. Install the latest LTS (Long term supported, as opposed to the "development") version of Node.js by typing `nvm install 16`.
+4. Install the latest LTS (Long term supported, as opposed to the "development") version of Node.js by typing `nvm install 18`.
 
 ## Verification
 
 1. Open a shell or windows powershell.
 2. Run the command `node -v`
-  - This should print the current version of nodeJS installed (v16.x.x)
+  - This should print the current version of nodeJS installed (v18.x.x)
 3. Run the command `npm -v`
   - This should print the current version of npm installed (v8.x.x)
 ![image](./assets/week1-getting-started/node/verification.JPG)
-4. If you find that some other version is being used, and would like to change the default to 16, run the command `nvm alias default 16`
+4. If you find that some other version is being used, and would like to change the default to 18, run the command `nvm alias default 18`
 
 # Installing Visual Studio Code (VSCode)
 
