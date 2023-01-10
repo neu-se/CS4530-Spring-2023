@@ -34,25 +34,33 @@ have previously installed Node.js.
 
 ## Installing NodeJS with NVM for Windows
 
-1. Download `nvm-setup.zip` from the most recent release of [nvm-windows](https://github.com/coreybutler/nvm-windows/releases) (at time of writing this document, version was 1.1.10.
+
+1. Download `nvm-setup.zip` from the most recent release of [nvm-windows](https://github.com/coreybutler/nvm-windows/releases) (at time of writing this document, version was 1.1.10).
+
    - ![image](./assets/week1-getting-started/node/download-nvmw.png)
 2. Extract the contents of `nvm-setup.zip` and run the executable `nvm-setup.exe`.
    - This should open the nvm installation wizard.
 3. Accept the license agreement and click next. Continue to accept the default choices for any remaining prompts, and click "install". If you receive messages along the lines of "NodeJS version XYZ is already installed, would you like nvm to control this installation," select "Yes". 
-7. Upon completion, you will see the below window
+4. Upon completion, you will see the below window
    - ![image](./assets/week1-getting-started/node/nvmw-finished.png)
-8. Open a command prompt with administrative privileges (type `cmd` in the windows start bar, then select "Run as administrator").
-9. Verify the installation, run the command `nvm version`
+5. Open a command prompt with administrative privileges (type `cmd` in the windows start bar, then select "Run as administrator").
+6. Verify the installation, run the command `nvm version`
    - This should display the version of nvm installed.
    - ![image](./assets/week1-getting-started/node/nvmw-verification.png)
-10. Run the command `nvm list available` to display all available NodeJS versions.
+7.  Run the command `nvm list available` to display all available NodeJS versions.
    - ![image](./assets/week1-getting-started/node/nvmw-list-available.png)
-11. Install the latest LTS (Long term supported, as opposed to the "development") version of Node.js available using the command `nvm install 18.13.0`.
-12. To use this version of NodeJS, run the command `nvm use 18.13.0`.
-13. Now, NodeJS should be installed and ready for use. To verify the installation run the below commands:
+
+8.  Install the latest LTS (Long term supported, as opposed to the "development") version of Node.js available using the command `nvm install lts`.
+9.  To use this version of NodeJS, run the command `nvm use lts`.
+10. Now, NodeJS should be installed and ready for use. To verify the installation run the below commands:
    - `node -v`
    - `npm -v`
-   - ![image](./assets/week1-getting-started/node/nvmw-use-18.png)
+You should see something like the following As of 1/09/23 on Windows, the most current versions were: 
+       - node: 18.13.0
+       - npm: 8.19.3
+  
+- ![image](./assets/week1-getting-started/node/nvmw-use-16.png)
+
 
 *Troubleshooting with VSCode*: Did you follow these instructions successfully, but find a "Command not found" error when you try to run `npm` in VSCode? Try this: Close VSCode completely. Re-open it. In your command shell in VSCode, try again. We have noticed that if you have VSCode open while installing `nvm`, it is possible that VSCode will not see the new software installation until it's closed and re-opened. You can also confirm that VSCode correctly sees the NodeJS installation by running `echo %PATH%` in your windows command shell in VSCode: it should include an entry similar to `C:\Program Files\nodejs`.
 

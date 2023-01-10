@@ -6,7 +6,7 @@ parent: Tutorials
 nav_order: 4
 ---
 
-This tutorial covers the basics on unit testing with Jest. By the end of this tutorial, you will have an introduction to unit testing with jest, best practices, and some handy tricks and tips to use in your tests. Starter code is available [here](./assets/week1-unit-testing/week1-tutorial-starter-code.zip), and finished code with tests covered in this tutorial can be found [here](./assets/week1-unit-testing/week1-unit-tests.zip). We strongly recommend using the completed solution only for reference and implementing the tutorial step by step from the starter code.
+This tutorial covers the basics on unit testing with Jest. By the end of this tutorial, you will have an introduction to unit testing with jest, best practices, and some handy tricks and tips to use in your tests. Starter code is available [here](./assets/week1-unit-testing/jest-tutorial-starter-code.zip), and finished code with tests covered in this tutorial can be found [here](./assets/week1-unit-testing/jest-tutorial-solution.zip). We strongly recommend using the completed solution only for reference and implementing the tutorial step by step from the starter code.
 
 Contents:
 
@@ -33,6 +33,7 @@ Contents:
   - [Installation](#installation)
     - [Direct Installation](#direct-installation)
     - [From Visual Studio Marketplace](#from-visual-studio-marketplace)
+    - [Additional Extensions and Libraries](#additional-extensions-and-libraries)
   - [Configuration](#configuration)
   - [Debugging Tests](#debugging-tests)
 - [General Guidelines For Writing Tests](#general-guidelines-for-writing-tests)
