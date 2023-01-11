@@ -1,5 +1,4 @@
-
-<!-- ---
+---
 layout: assignment
 title: "Individual Project (Deliverable 1)"
 permalink: /assignments/ip1
@@ -7,7 +6,7 @@ parent: Assignments
 nav_order: 1
 due_date: "Wednesday January 25, 11:00am ET"
 submission_notes: Submit via GradeScope
---- -->
+---
 
 # Individual Project (Deliverable 1)
 
