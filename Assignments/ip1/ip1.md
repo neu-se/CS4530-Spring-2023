@@ -227,15 +227,16 @@ These methods are located in two files:
 * `src/town/Town.ts` (`socket.on('interactableUpdate')` handler and `addPosterSessionArea`)
 * `src/town/TownsController.ts` (`createPosterSessionArea`, `incrementPosterAreaStars`, `getPosterAreaImageContents`)
 The `socket.on` handler is automatically invoked by the socket-io library when an event is received from a remote client. 
-The `createPosterSessionArea` function is automatically invoked by the tsoa REST middleware when a REST request is made by a remote client. 
+The `createPosterSessionArea` function is automatically invoked by the tsoa REST middleware when a REST request is made by a remote client. For this deliverable, you will not need to write any code for the middleware and we will be discussing these in future lectures.
 
 To run the tests for this part, run the command `npm test TestName`, where `TestName` is either `Town.test` or `TownsController`.
 
 <details><summary markdown="span">View the specification for these methods</summary>
 {% highlight typescript %}
-// src/town/Town.ts
+
 
 /**
+   * File: src/town/Town.ts
    * Creates a new poster session area in this town if there is not currently an 
    * active one with the same Id. The poster session area Id must match the name 
    * of a poster session area that exists in this town's map, and the poster 
@@ -255,8 +256,8 @@ To run the tests for this part, run the command `npm test TestName`, where `Test
    */
   public addPosterSessionArea(area: PosterSessionAreaModel): boolean
 
-// src/town/TownsController.ts
   /**
+   * File: src/town/TownsController.ts
    * Creates a poster session area in a given town
    *
    * @param townID ID of the town in which to create the new poster area
@@ -317,7 +318,7 @@ To run the tests for this part, run the command `npm test TestName`, where `Test
       @Header('X-Session-Token') sessionToken: string,
     ): Promise<void>
 
-// src/town/Town.ts
+// File: src/town/Town.ts
 // Set up a listener to process updates to interactables.
 // Currently only knows how to process updates for ViewingAreas 
 // and PosterSessionAreas, and ignores any other updates for any 
