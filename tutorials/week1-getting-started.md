@@ -59,7 +59,7 @@ You should see something like the following As of 1/09/23 on Windows, the most c
        - node: 18.13.0
        - npm: 8.19.3
   
-- ![image](./assets/week1-getting-started/node/nvmw-use-16.png)
+- ![image](./assets/week1-getting-started/node/nvmw-use-18.png)
 
 
 *Troubleshooting with VSCode*: Did you follow these instructions successfully, but find a "Command not found" error when you try to run `npm` in VSCode? Try this: Close VSCode completely. Re-open it. In your command shell in VSCode, try again. We have noticed that if you have VSCode open while installing `nvm`, it is possible that VSCode will not see the new software installation until it's closed and re-opened. You can also confirm that VSCode correctly sees the NodeJS installation by running `echo %PATH%` in your windows command shell in VSCode: it should include an entry similar to `C:\Program Files\nodejs`.
