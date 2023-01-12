@@ -26,7 +26,7 @@ Many student projects (some are [showcased](https://neu-se.github.io/CS4530-Fall
 
 This semester, we'll add a new kind of area: a `PosterSessionArea`, which allows players to upload the image of a poster, and for others in the area to discuss that poster in a dedicated chat channel and to *star*" a poster (like stars on GitHub).
 
-Previously, there was a single chat for the entire Town: this term, players will a chat for the area they are in -- this means that messages between players in the same area are visible to each other, but not to players outside this area. 
+Previously, there was a single chat for the entire Town: this term, players will implement a chat for the area they are in -- this means that messages between players in the same area are visible to each other, but not to players outside this area. 
 This is implemented as a modification of the `ChatMessage` type to include information about what area it originated from, and inclusion of this information when sending messages from within an area.
 
 The goals for our project are to modify the `ChatMessage` to include area-specific Id and to implement the .`PosterSessionArea`.  This effort will be split across two deliverables. 
@@ -78,7 +78,7 @@ class ConversationArea {
     +fromMapObject(mapObject, townEmitter) 
 } 
 class PosterSessionArea { 
-    +Image poster 
+    +string imageContents 
     +number stars 
     +string title 
     +updateModel(updatedModel:PosterSessionAreaModel) 
