@@ -44,7 +44,7 @@ In our first deliverable, you will implement and test the backend components for
 
 ## Getting started 
 
-Download the [starter code]({{site.baseurl}}{%link /Assignments/ip1/ip1-handout.zip %}), extract the archive, and `run npm install` to fetch the dependencies. 
+Download the [starter code]({{site.baseurl}}{%link /Assignments/ip1/ip1-handout.zip %}), extract the archive, and run `npm install` to fetch the dependencies. 
 We have some basic sanity tests that you will extend.
 
 ## Overview of relevant classes
@@ -371,7 +371,7 @@ Your last task is to implement a function to validate the `InteractableArea`s de
 
 We provided you with a test case for some of the basic functionality of this function. Add tests in the same `describe` block as the existing one in `src/town/Town.test.ts`. To run these tests, type `npx jest --watch Town.test`.
 
-The function takes a `ITiledMap` object; you can learn more about the structure from reviewing the type definition, from the [Tiled JSON Map Format Specification](https://doc.mapeditor.org/en/stable/reference/json-map-format/), and from the example provided in the test case for `initializeFromMap`. The specific *layer* of the map that you are looking for will be of the type `ITiledMapObjectLayer`. The object layer will list all of the objects. The `type` property of each object in that layer identifies it as a `ViewingArea`, `ConversationArea`, or other - you can ignore any others.
+The function takes a `ITiledMap` object; you can learn more about the structure from reviewing the type definition, from the [Tiled JSON Map Format Specification](https://doc.mapeditor.org/en/stable/reference/json-map-format/), and from the example provided in the test case for `initializeFromMap`. The specific *layer* of the map that you are looking for will be of the type `ITiledMapObjectLayer`. The object layer will list all of the objects. The `type` property of each object in that layer identifies it as a `ViewingArea`, `ConversationArea`, `PosterSessionArea` or other - you can ignore any others.
 
 The grading script will run two integration tests as part of grading this task. The integration tests check every method that you were required to complete. These two tests are clearly identified as integration tests in the grading output. 
 Do *not* try to replicate these integration tests in your tests for `initializeFromMap`. We will *only* grade your tests for `initializeFromMap` on their ability to find defects in our implementation of `initializeFromMap`, and *not* in any other functions.
