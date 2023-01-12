@@ -50,76 +50,88 @@ This UML class diagram shows the `PosterSessionArea` and `ChatMessage` classes y
 <script src="{{site.baseurl}}/assets/js/mermaid.min.js" />
 <div class="mermaid">
  %%{init: { 'theme':'forest', } }%%
-classDiagram
-   class InteractableArea {
-       +string id
-       ~Player[] _occupants
-       +string[] occupantsByID
-       +boolean isActive
-       +BoundingBox boundingBox
-       +add(player: Player)
-       +remove(player: Player)
-       +addPlayersWithinBounds(allPlayers: Player[])
-       +toModel()
-       +contains(location: PlayerLocation)
-       +overlaps(otherInteractable: Interactable)
-       #_emitAreaChanged()
-   }
+classDiagram 
+class InteractableArea { 
+    +string id 
+    ~Player[] _occupants 
+    +string[] occupantsByID 
+    +boolean isActive 
+    +BoundingBox boundingBox 
+    +add(player: Player) +remove(player: Player) 
+    +addPlayersWithinBounds(allPlayers: Player[]) 
+    +toModel() 
+    +contains(location: PlayerLocation) 
+    +overlaps(otherInteractable: Interactable) #_emitAreaChanged() 
+} 
+class ViewingArea { 
+    +string video 
+    +number progress 
+    +boolean isPlaying 
+    +updateModel(updatedModel:ViewingAreaModel) 
+    +fromMapObject(mapObject, townEmitter) 
+} 
+class ConversationArea { 
+    +string? topic 
+    +fromMapObject(mapObject, townEmitter) 
+} 
+class PosterSessionArea { 
+    +Image poster 
+    +number stars 
+    +string title 
+    +updateModel(updatedModel:PosterSessionAreaModel) 
+    +fromMapObject(mapObject, townEmitter) 
+}
+class BoundingBox {
+    +number x 
+    +number y 
+    +number width 
+    +number height 
+} 
+class Player { 
+    +PlayerLocation location 
+    +string id 
+    +string username 
+} 
+class PlayerLocation { 
+    +number x 
+    +number y 
+    +Direction rotation 
+    +boolean moving 
+    +string? interactableID 
+} 
+class Town { 
+    +string townID 
+    +string friendlyName 
+    +InteractableArea[] interactables 
+    +Player[] players 
+    +void initializeMap(mapFile: string) 
+} 
+class TownEmitter { 
+    +void emit(eventName: ServerToClientEvents, eventData) 
+} 
+class ServerToClientEvents { 
+    +void playerMoved(movedPlayer: Player) 
+    +void interactableUpdate(updatedInteractable: Interactable) 
+} 
+class ChatMessage {
+    +string author
+    +string sid
+    +string body
+    +Date dateCreated
+    +string? interactableId
+}
+ViewingArea ..|> InteractableArea 
+ConversationArea ..|> InteractableArea 
+PosterSessionArea ..|> InteractableArea
+InteractableArea o-- BoundingBox 
+InteractableArea o-- Player 
+InteractableArea o-- TownEmitter 
+Player o-- PlayerLocation 
+Town o-- Player 
+Town o-- InteractableArea 
+Town o-- TownEmitter 
+TownEmitter -- ServerToClientEvents
 
-   class ViewingArea {
-       +string video
-       +number progress
-       +boolean isPlaying
-       +updateModel(updatedModel:ViewingAreaModel)
-       +fromMapObject(mapObject, townEmitter)
-   }
-
-   class ConversationArea {
-       +string? topic
-       +fromMapObject(mapObject, townEmitter)
-   }
-   class BoundingBox {
-       +number x
-       +number y
-       +number width
-       +number height
-   }
-   class Player {
-       +PlayerLocation location
-       +string id
-       +string username
-   }
-   class PlayerLocation {
-       +number x
-       +number y
-       +Direction rotation
-       +boolean moving
-       +string? interactableID
-   }
-   class Town {
-       +string townID
-       +string friendlyName
-       +InteractableArea[] interactables
-       +Player[] players
-       +void initializeMap(mapFile: string)
-   }
-   class TownEmitter {
-       +void emit(eventName: ServerToClientEvents, eventData)
-   }
-   class ServerToClientEvents {
-       +void playerMoved(movedPlayer: Player)
-       +void interactableUpdate(updatedInteractable: Interactable)
-   }
-   ViewingArea ..|> InteractableArea
-   ConversationArea ..|> InteractableArea
-   InteractableArea o-- BoundingBox
-   InteractableArea o-- Player
-   InteractableArea o-- TownEmitter
-   Player o-- PlayerLocation
-   Town o-- Player
-   Town o-- InteractableArea
-   Town o-- TownEmitter
-   TownEmitter -- ServerToClientEvents
 </div>
 
 ## Grading
