@@ -178,7 +178,7 @@ To demonstrate your understanding, add tests to `Town.test.ts`. As an example, w
 Grading:
 * modify server to send messagebs to clients with the same `interactableId` as the player/message.
 * message-passing test in `Town` should run, once the new field is added (XS points)
-* add tests to `InteractableArea` (M points)
+* add tests to for `InteractableArea` to `Town.test.ts` (M points)
 
 ### Task 2: Add the PosterSessionArea (L points total)
 
