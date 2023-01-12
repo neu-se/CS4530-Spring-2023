@@ -39,6 +39,9 @@ In our first deliverable, you will implement and test the backend components for
 * Translate high-level requirements into code
 * Learn how to write unit tests with Jest
 
+## Changelog
+* 1/11/23: Updated UML diagram to include `PosterSessionArea` and `ChatMessage` classes
+
 ## Getting started 
 
 Download the [starter code]({{site.baseurl}}{%link /Assignments/ip1/ip1-handout.zip %}), extract the archive, and `run npm install` to fetch the dependencies. 
