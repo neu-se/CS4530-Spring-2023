@@ -390,10 +390,6 @@ Please contact the instructors immediately if you have difficulty accessing the 
 To submit your assignment: upload *only* the files:
 * `src/town/InteractableArea.ts` 
 * `src/town/InteractableArea.test.ts` 
-* `src/town/ConversationArea.ts` 
-* `src/town/ConversationArea.test.ts` 
-* `src/town/ViewingArea.ts` 
-* `src/town/ViewingArea.test.ts` 
 * `src/town/PosterSessionArea.ts` 
 * `src/town/PosterSessionArea.test.ts` 
 * `src/town/Town.test.ts` 
