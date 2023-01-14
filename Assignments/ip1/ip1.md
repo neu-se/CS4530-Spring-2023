@@ -246,7 +246,7 @@ These methods are located in two files:
 The `socket.on` handler is automatically invoked by the socket-io library when an event is received from a remote client. 
 The `createPosterSessionArea` function is automatically invoked by the tsoa REST middleware when a REST request is made by a remote client. For this deliverable, you will not need to write any code for the middleware and we will be discussing these in future lectures.
 
-To run the tests for this part, run the command `npm test TestName`, where `TestName` is either `Town.test` or `TownsController`.
+To run the tests for this part, run the command `npm test TestName`, where `TestName` is either `Town.test` or `PosterSessionController` (which runs the tests for the new functions in `TownsController`).
 
 <details><summary markdown="span">View the specification for these methods</summary>
 {% highlight typescript %}
@@ -274,7 +274,7 @@ To run the tests for this part, run the command `npm test TestName`, where `Test
   public addPosterSessionArea(area: PosterSessionAreaModel): boolean
 
   /**
-   * File: src/town/TownsController.ts
+   * File: src/town/PosterSessionController.ts
    * Creates a poster session area in a given town
    *
    * @param townID ID of the town in which to create the new poster area
@@ -393,7 +393,7 @@ To submit your assignment: upload *only* the files:
 * `src/town/PosterSessionArea.test.ts` 
 * `src/town/Town.test.ts` 
 * `src/town/Town.ts` 
-* `src/town/TownsController.test.ts` 
+* `src/town/PosterSessionController.test.ts` 
 * `src/town/TownsController.ts` 
 
 The grading script accepts any subset of these files. 
