@@ -41,6 +41,7 @@ In our first deliverable, you will implement and test the backend components for
 
 ## Changelog
 * 1/11/23: Updated UML diagram to include `PosterSessionArea` and `ChatMessage` classes
+* 1/13/23: Divided the `TownsController.test.ts` tests into 2 files: `TownsController.test.ts` the old file now only has the integration tests for the non-poster-session-area components, and `PosterSessionController.test.ts` has the new tests for `createPosterSessionArea` and the other functions specified in Task 3. Students now need to extend `PosterSessionController.test.ts` with their own tests, and don't need to submit `TownsController.test.ts` (the reason for this split: fixing timeout errors on the test suite) 
 
 ## Getting started 
 
@@ -246,7 +247,7 @@ These methods are located in two files:
 The `socket.on` handler is automatically invoked by the socket-io library when an event is received from a remote client. 
 The `createPosterSessionArea` function is automatically invoked by the tsoa REST middleware when a REST request is made by a remote client. For this deliverable, you will not need to write any code for the middleware and we will be discussing these in future lectures.
 
-To run the tests for this part, run the command `npm test TestName`, where `TestName` is either `Town.test` or `TownsController`.
+To run the tests for this part, run the command `npm test TestName`, where `TestName` is either `Town.test` or `PosterSessionController` (which runs the tests for the new functions in `TownsController`).
 
 <details><summary markdown="span">View the specification for these methods</summary>
 {% highlight typescript %}
@@ -274,7 +275,7 @@ To run the tests for this part, run the command `npm test TestName`, where `Test
   public addPosterSessionArea(area: PosterSessionAreaModel): boolean
 
   /**
-   * File: src/town/TownsController.ts
+   * File: src/town/PosterSessionController.ts
    * Creates a poster session area in a given town
    *
    * @param townID ID of the town in which to create the new poster area
@@ -389,16 +390,11 @@ Please contact the instructors immediately if you have difficulty accessing the 
 
 To submit your assignment: upload *only* the files:
 * `src/town/InteractableArea.ts` 
-* `src/town/InteractableArea.test.ts` 
-* `src/town/ConversationArea.ts` 
-* `src/town/ConversationArea.test.ts` 
-* `src/town/ViewingArea.ts` 
-* `src/town/ViewingArea.test.ts` 
 * `src/town/PosterSessionArea.ts` 
 * `src/town/PosterSessionArea.test.ts` 
 * `src/town/Town.test.ts` 
 * `src/town/Town.ts` 
-* `src/town/TownsController.test.ts` 
+* `src/town/PosterSessionController.test.ts` 
 * `src/town/TownsController.ts` 
 
 The grading script accepts any subset of these files. 
