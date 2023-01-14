@@ -41,6 +41,7 @@ In our first deliverable, you will implement and test the backend components for
 
 ## Changelog
 * 1/11/23: Updated UML diagram to include `PosterSessionArea` and `ChatMessage` classes
+* 1/13/23: Divided the `TownsController.test.ts` tests into 2 files: `TownsController.test.ts` the old file now only has the integration tests for the non-poster-session-area components, and `PosterSessionController.test.ts` has the new tests for `createPosterSessionArea` and the other functions specified in Task 3. Students now need to extend `PosterSessionController.test.ts` with their own tests, and don't need to submit `TownsController.test.ts` (the reason for this split: fixing timeout errors on the test suite) 
 
 ## Getting started 
 
