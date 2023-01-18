@@ -6,6 +6,6 @@ website: http://janvitek.org/
 photo: staff/vitek.jpg
 section: CS4530 Sections 4 & 5 
 office-hours: |
-    * TBA
+    * At 7pm, https://northeastern.zoom.us/my/jvroom
 ---
 
