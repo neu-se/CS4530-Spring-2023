@@ -26,7 +26,7 @@ Many student projects (some are [showcased](https://neu-se.github.io/CS4530-Fall
 
 This semester, we'll add a new kind of area: a `PosterSessionArea`, which allows players to upload the image of a poster, and for others in the area to discuss that poster in a dedicated chat channel and to *star*" a poster (like stars on GitHub).
 
-Previously, there was a single chat for the entire Town: this term, players will a chat for the area they are in -- this means that messages between players in the same area are visible to each other, but not to players outside this area. 
+Previously, there was a single chat for the entire Town: this term, players will implement a chat for the area they are in -- this means that messages between players in the same area are visible to each other, but not to players outside this area. 
 This is implemented as a modification of the `ChatMessage` type to include information about what area it originated from, and inclusion of this information when sending messages from within an area.
 
 The goals for our project are to modify the `ChatMessage` to include area-specific Id and to implement the .`PosterSessionArea`.  This effort will be split across two deliverables. 
@@ -41,10 +41,11 @@ In our first deliverable, you will implement and test the backend components for
 
 ## Changelog
 * 1/11/23: Updated UML diagram to include `PosterSessionArea` and `ChatMessage` classes
+* 1/13/23: Divided the `TownsController.test.ts` tests into 2 files: `TownsController.test.ts` the old file now only has the integration tests for the non-poster-session-area components, and `PosterSessionController.test.ts` has the new tests for `createPosterSessionArea` and the other functions specified in Task 3. Students now need to extend `PosterSessionController.test.ts` with their own tests, and don't need to submit `TownsController.test.ts` (the reason for this split: fixing timeout errors on the test suite) 
 
 ## Getting started 
 
-Download the [starter code]({{site.baseurl}}{%link /Assignments/ip1/ip1-handout.zip %}), extract the archive, and `run npm install` to fetch the dependencies. 
+Download the [starter code]({{site.baseurl}}{%link /Assignments/ip1/ip1-handout.zip %}), extract the archive, and run `npm install` to fetch the dependencies. 
 We have some basic sanity tests that you will extend.
 
 ## Overview of relevant classes
@@ -78,7 +79,7 @@ class ConversationArea {
     +fromMapObject(mapObject, townEmitter) 
 } 
 class PosterSessionArea { 
-    +Image poster 
+    +string imageContents 
     +number stars 
     +string title 
     +updateModel(updatedModel:PosterSessionAreaModel) 
@@ -167,7 +168,7 @@ We will deduct two points for each violation.
 
 This deliverable has four parts.  Complete the work one part at a time, in order.
 
-### Task 1: Extend chat messages (S points total)
+### Task 1: Extend chat messages (10 points total)
 
 The `ChatMessage` type represents the information passed along with the message contents when a `Player` sends a message.
 To enable area-specific chats, we are adding the identifier of the `InteractableArea` as an `interactableId` field to the `ChatMessage` (or `undefined` if the `Player` is not in an `InteractableArea`). 
@@ -176,11 +177,11 @@ The server should forward messages only if the `interactableId` of the message i
 To demonstrate your understanding, add tests to `Town.test.ts`. As an example, we’ve included the test `'Forwards chat messages to players with the same ID as the message ID'`. 
 
 Grading:
-* modify server to send messagebs to clients with the same `interactableId` as the player/message.
-* message-passing test in `Town` should run, once the new field is added (XS points)
-* add tests to `InteractableArea` (M points)
+* modify server to send messages to clients with the same `interactableId` as the player/message (3 points).
+* message-passing test in `Town` should run, once the new field is added (2 points)
+* add new tests for `InteractableArea` to `Town.test.ts` (5 points)
 
-### Task 2: Add the PosterSessionArea (L points total)
+### Task 2: Add the PosterSessionArea (40 points total)
 
 The `PosterSessionArea` specializes `InteractableArea` to store three properties: poster (a string with the contents of the poster file to be viewed or undefined if none is set), stars (the number of stars that other players have given this poster, starting at 0), and title (a string with the title of the poster or undefined if no poster is set).
 
@@ -223,18 +224,20 @@ public static fromMapObject(obj: ITiledMapObject, emitter: TownEmitter): PosterS
 {% endhighlight %}
 </details>
 
-Grading:
-* add the correct fields/getters/setters to the class: L points
-* implement `remove`: M points
-* implement `updateModel`: XS points
-* implement `toModel`: XS points
-* implement `fromMapObject`: XS points
-* test `updateModel`: XS points
-* test `toModel`: XS points
-* test `fromMapObject`: XS points
-* test `remove`: XS points
+Grading for implementation tasks: 20 points total
+* add the correct fields/getters/setters to the class: 3 points
+* implement `remove`: 5 points
+* implement `updateModel`: 5 points
+* implement `toModel`: 2 points
+* implement `fromMapObject`: 5 points
 
-### Task 3: Add a REST API (M points)
+Grading for testing tasks: 20 points total
+* test `updateModel`: 5 points
+* test `toModel`: 5 points
+* test `fromMapObject`: 5 points
+* test `remove`: 5 points
+
+### Task 3: Add a REST API (30 points total)
 
 We now turn to the public-facing web service APIs that the client can directly invoke.
 
@@ -244,7 +247,7 @@ These methods are located in two files:
 The `socket.on` handler is automatically invoked by the socket-io library when an event is received from a remote client. 
 The `createPosterSessionArea` function is automatically invoked by the tsoa REST middleware when a REST request is made by a remote client. For this deliverable, you will not need to write any code for the middleware and we will be discussing these in future lectures.
 
-To run the tests for this part, run the command `npm test TestName`, where `TestName` is either `Town.test` or `TownsController`.
+To run the tests for this part, run the command `npm test TestName`, where `TestName` is either `Town.test` or `PosterSessionController` (which runs the tests for the new functions in `TownsController`).
 
 <details><summary markdown="span">View the specification for these methods</summary>
 {% highlight typescript %}
@@ -272,7 +275,7 @@ To run the tests for this part, run the command `npm test TestName`, where `Test
   public addPosterSessionArea(area: PosterSessionAreaModel): boolean
 
   /**
-   * File: src/town/TownsController.ts
+   * File: src/town/PosterSessionController.ts
    * Creates a poster session area in a given town
    *
    * @param townID ID of the town in which to create the new poster area
@@ -350,33 +353,33 @@ To run the tests for this part, run the command `npm test TestName`, where `Test
 
 </details>
 
-Grading for implementation tasks:
-* `socket.on(`interactableArea')`: XS points
-* `addPosterSessionArea`: S points
-* `createPosterSessionArea`: S points
-* `getPosterAreaImageContents`: S points
-* `incrementPosterAreaStars`: S points
+Grading for implementation tasks: 20 points total
+* `socket.on(`interactableArea')`: 4 points
+* `addPosterSessionArea`: 4 points
+* `createPosterSessionArea`: 4 points
+* `getPosterAreaImageContents`: 4 points
+* `incrementPosterAreaStars`: 4 points
   
-Grading for testing tasks:
-* `createPosterSessionArea`: S points
-* `getPosterAreaImageContents`: S points
-* `incrementPosterAreaStars`: S points
+Grading for testing tasks: 10 points total
+* `createPosterSessionArea`: 3 points
+* `getPosterAreaImageContents`: 3 points
+* `incrementPosterAreaStars`: 4 points
 
 
-### Task 3: Add method createInteractablesFromMap (S points total)
+### Task 4: Add method createInteractablesFromMap (10 points total)
 
 Your last task is to implement a function to validate the `InteractableArea`s defined in the town's map file and populate the `Town` with instances of `ViewingArea`, `ConversationArea`, and `PosterSessionArea` to represent those areas. Implement this function in the method `initializeFromMap` in `src/town/Town.ts`. 
 
 We provided you with a test case for some of the basic functionality of this function. Add tests in the same `describe` block as the existing one in `src/town/Town.test.ts`. To run these tests, type `npx jest --watch Town.test`.
 
-The function takes a `ITiledMap` object; you can learn more about the structure from reviewing the type definition, from the [Tiled JSON Map Format Specification](https://doc.mapeditor.org/en/stable/reference/json-map-format/), and from the example provided in the test case for `initializeFromMap`. The specific *layer* of the map that you are looking for will be of the type `ITiledMapObjectLayer`. The object layer will list all of the objects. The `type` property of each object in that layer identifies it as a `ViewingArea`, `ConversationArea`, or other - you can ignore any others.
+The function takes a `ITiledMap` object; you can learn more about the structure from reviewing the type definition, from the [Tiled JSON Map Format Specification](https://doc.mapeditor.org/en/stable/reference/json-map-format/), and from the example provided in the test case for `initializeFromMap`. The specific *layer* of the map that you are looking for will be of the type `ITiledMapObjectLayer`. The object layer will list all of the objects. The `type` property of each object in that layer identifies it as a `ViewingArea`, `ConversationArea`, `PosterSessionArea` or other - you can ignore any others.
 
 The grading script will run two integration tests as part of grading this task. The integration tests check every method that you were required to complete. These two tests are clearly identified as integration tests in the grading output. 
 Do *not* try to replicate these integration tests in your tests for `initializeFromMap`. We will *only* grade your tests for `initializeFromMap` on their ability to find defects in our implementation of `initializeFromMap`, and *not* in any other functions.
 
 Grading:
-* correct implementation (M points)
-* tests (M points)
+* correct implementation (6 points)
+* tests (4 points)
 
 ## Submission Instructions
 
@@ -387,16 +390,11 @@ Please contact the instructors immediately if you have difficulty accessing the 
 
 To submit your assignment: upload *only* the files:
 * `src/town/InteractableArea.ts` 
-* `src/town/InteractableArea.test.ts` 
-* `src/town/ConversationArea.ts` 
-* `src/town/ConversationArea.test.ts` 
-* `src/town/ViewingArea.ts` 
-* `src/town/ViewingArea.test.ts` 
 * `src/town/PosterSessionArea.ts` 
 * `src/town/PosterSessionArea.test.ts` 
 * `src/town/Town.test.ts` 
 * `src/town/Town.ts` 
-* `src/town/TownsController.test.ts` 
+* `src/town/PosterSessionController.test.ts` 
 * `src/town/TownsController.ts` 
 
 The grading script accepts any subset of these files. 
