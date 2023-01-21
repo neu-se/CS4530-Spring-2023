@@ -4,7 +4,7 @@ title: React
 nav_exclude: true
 ---
 
-## Test-Driven Development
+## React Activity - Todo Tracker
 
 This activity is intended to supplement the CS4530 lecture on React and it will let you practice with `useState` to create a simple todo tracker.
 
