@@ -14,7 +14,7 @@ Learning Objectives for this activity:
 In this activity, you will experiment with asynchronous programming constructs in TypeScript.
 
 ### Getting started
-Download [starter Code]({{ site.baseurl }}{% link Activities/module-05-async-transcript-example.zip %}) 
+Download [starter Code]({{ site.baseurl }}{% link Activities/module05-async_activity.zip %}) 
 Run `npm install` to download the dependencies for this project, and then open it in your IDE of choice. 
 Run `npm run client` to run the client as-is, the output should be something like:
 
