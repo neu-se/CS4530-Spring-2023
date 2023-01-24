@@ -1,3 +1,9 @@
+---
+layout: page
+title: Async Activity
+nav_exclude: true
+---
+
 # Simple Activity using async/await
 
 Learning Objectives for this activity:
