@@ -70,7 +70,7 @@ Example input:
 ]
 ```
 
-If you finish quickly, you might also try to implement this three ways:
+Implement this three ways:
 1. Insert a student, insert each of their grades (in order), then insert the next student, then their grades, etc. until all students are inserted, then fetch transcripts
 2. Insert a student, then insert each of their grades (in order), then fetch their transcript. Do this set of operations asynchronously (concurrently) for all students
 3. Insert a student, then insert each of their grades asynchronously (concurrently). After all students have all of their grades submitted, fetch all fo the transcripts asynchronously (concurrently)
