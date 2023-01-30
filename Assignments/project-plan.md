@@ -106,7 +106,7 @@ The project plan will account for 10% of your project grade, and will be graded 
 * Receive full marks if there is a narrative consisting of 4-10 sentences that describes a specific problem that your project aims to solve.
 * Receive partial credit if the narrative is present, but does not describe a problem that the project aims to solve
 
-### User stories (20 points):
+### User stories (15 points):
 Each of the three user stories will account for 5% of your grade on this assignment and graded as follows:
 * Receive full marks if:
   * The user story fits the problem statement
@@ -114,7 +114,7 @@ Each of the three user stories will account for 5% of your grade on this assignm
   * The user story includes conditions of satisfaction that cover the "normal" expected behavior of the feature, and any relevant error cases
   * The user story or conditions of satisfaction include priority
 
-### Work breakdown (75 points):
+### Work breakdown (80 points):
 Your work breakdown will be evaluated holistically on the following rubric:
 
 #### Coverage of tasks needed (20 points):
@@ -134,7 +134,7 @@ Receive full marks if:
 * Each element on the work breakdown is assigned to one team member
 * The distribution of tasks of each size are roughly similar between the whole team (no single person is assigned significantly more or fewer tasks of one size)
 
-#### Sizing of tasks (35 points):
+#### Sizing of tasks (40 points):
 Receive full marks if each element on the work breakdown:
 * Has a size estimate (small, medium, or large) that is provided by the team member assigned the task.
 * Has a responsible justification for that estimation
