@@ -46,6 +46,7 @@ Given the problem statement, develop three user stories that show how a user wou
 My conditions of satisfaction are < list of common cases and special cases that must work >.
 
 **EACH USER STORY OR CONDITION OF SATISFACTION MUST HAVE A PRIORITY (Essential, Desirable, or Optional)**.  The set of Essential items will constitute the "Minimum Viable Product" discussed above.
+
 You should include three different user stories to describe how users will interact with your feature.
 Your three user stories should cover the key behavior that your feature will provide.
 
