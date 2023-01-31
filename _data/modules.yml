@@ -21,8 +21,10 @@
   page: /modules/6-software-process
 4a:
   name: Intro to React
+  page: /modules/7-react
 4b:
   name: Patterns of React
+  page: /modules/8-patterns-of-react
 5a:
   name: Distributed Systems Principles & Requirements
 5b:
