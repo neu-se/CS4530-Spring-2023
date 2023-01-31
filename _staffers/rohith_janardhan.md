@@ -1,6 +1,6 @@
 ---
 name: Rohith Janardhan
 role: Teaching Assistant
-photo: 
+photo: staff/rohith_janardhan.jpeg
 email: janardhan.r@northeastern.edu
 ---

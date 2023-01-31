@@ -43,7 +43,7 @@ The course will be delivered in a "traditional" lecture style. Prof Wand's secti
 | 4             | Prof Vitek                                                                | TF 1:35 pm - 3:15 pm                         | West Village G 106 |
 | 5             | Prof Vitek                                                                | TF 3:25 pm - 5:05 pm                         | Robinson Hall 109  |
 | 6             | Prof Wand                                                                 | W 6:00 pm - 9:20 pm                          | Online             |
-| 7             | Prof Bhutta                                                               | TF 9:50 am - 11:30 am                        | West Village H 366 |
+| 7             | Prof Bhutta                                                               | TF 9:50 am - 11:30 am                        | Robinson Hall 109 |
 
 ## Course Project
 The assignments and project for this class are designed to mirror the experiences of a software engineer joining a new development team:
