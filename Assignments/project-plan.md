@@ -5,7 +5,7 @@ permalink: /assignments/project-plan
 parent: Assignments
 nav_order: 3
 ---
-# Project Plan **Due Wednesday Febraury 15, 11:00am ET**{: .label .label-red }
+# Project Plan **Due Wednesday February 15, 11:00am ET**{: .label .label-red }
 All projects will involve frontend and backend development of a new feature for Covey.Town.
 Once teams have been formed, you and your team will decide what kind of new feature you would like to build.
 Your feature should be something that can be implemented within the timeframe allotted (5 weeks, plus 2 weeks of planning), and will be implemented in a fork of the main Covey.Town codebase.
@@ -59,15 +59,17 @@ A work breakdown includes all of the tasks necessary to accomplish the project, 
 Consider all of the kinds of tasks that your team will need to perform, including knowledge acquisition, design, implementation, testing and documentation tasks.
 It is hard to say (generically) how many work items are necessary.
 
-Each task on the work breakdown should be assigned to exactly one team member, who should provide a "T-Shirt" estimate for how long it will take (along with a justification for that estimate). 
+Each task on the work breakdown should be assigned to exactly one team member and should include a "T-Shirt estimate" for how long it will take (along with a justification for that estimate). 
 Consider the dependencies between tests: perhaps an API needs to be designed and specified before implementation can begin; perhaps your development environment needs to be configured before anything else can proceed.
 Assign tasks to sprints considering these dependencies.
 
-Given the preliminary nature of your project, we do not expect that you will know all of the details about precisely how to implement your feature such that you could break it down into tasks that you feel could be implemented in a day or two.
-However: Large tasks (those which you can not provide a responsible estimate for) must be accompanied by smaller "research" tasks that can be performed early on in the project, providing clear deadlines by which the task must either be refined into smaller tasks (based on new knowledge gathered), or reworked/abandoned.
-You might consider even scheduling some of these research tasks to take place during Sprint 0 (immediately after submitting this document).
+Given the preliminary nature of your project, we do not expect that you will know all of the details about precisely how to implement your feature such that you could break it down into tasks that you feel could be implemented in a day or two. Large tasks (those which you can not provide a responsible estimate for) must be accompanied by smaller “research” tasks that can be performed early on in the project. You may wish to provide deadlines by which the task must either be refined into smaller tasks (based on new knowledge gathered), or reworked/abandoned.
+
+In keeping with the agile philosophy, you should plan on spending the first two weeks of the project (from February 1 until February 15) in a "Sprint -1" in which you will undertake organizational and research tasks to help you improve your project plan (due on February 15).
 
 For example: Consider if you were proposing the "Viewing Area" project (the individual project), without the experience of having completed it. It might be difficult to consider how to break down a task like "Implement the frontend components for sychnronized video playback" into something that you could commit to doing within a day or two. Given that this is a task that can be delayed until the end of the project (no other tasks depend on it), it would be wise to consider having some tasks early on in the project, such as: "Find react components that embed YouTube videos," and "Implement simple video player that does not synchronize playback." Completing these smaller tasks early would let you both demonstrate that some forward progress is being made, and also allow you to create a much more responsible estimate for how that last, otherwise insurmountably large task would take.
+
+Do not wait for your TA feedback to begin this work. You probably know more about the details of your project then they do. It will be helpful for all concerned if your Project Plan lists the major unknowns or things that you expect to need help with-- this will help the TA provide more useful feedback for you
 
 Be realistic, and leave time for contingencies (including the time around the midterm exam on March 13-14).
 Remember that you will need to have a demo prepared of your feature by 4/12 - just 7 weeks from the due date of this assignment (not counting spring break).
@@ -107,7 +109,7 @@ The project plan will account for 10% of your project grade, and will be graded 
 * Receive partial credit if the narrative is present, but does not describe a problem that the project aims to solve
 
 ### User stories (15 points):
-Each of the three user stories will account for 5% of your grade on this assignment and graded as follows:
+Each of the three user stories will account for 5% of your grade on this assignment and will be graded as follows:
 * Receive full marks if:
   * The user story fits the problem statement
   * The user story satisfies the INVEST criteria for good user stories (construed quite broadly)

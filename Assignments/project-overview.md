@@ -75,7 +75,7 @@ The project plan will focus on two sections:
 ### Creating a GitHub Repository
 Your team's development must take place within a private GitHub repository in our GitHub Classroom. We will provide further instructions later.
 
-This repository will be private, and visible only to your team and the course staff. After the semester ends, you are welcome to make it public - you have complete administrative control of the repository.
+This repository will be private, and visible only to your team and the course staff. After the semester ends, you are welcome to make it public - you will have complete administrative control of the repository.
 
 ### Revised Project Plan
 Based on the feedback that you receive from the course staff, you will revise your preliminary project plan, creating a more detailed plan to implement your new feature.
