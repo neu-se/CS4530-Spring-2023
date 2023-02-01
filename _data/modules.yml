@@ -26,9 +26,11 @@
   name: Patterns of React
   page: /modules/8-patterns-of-react
 5a:
-  name: Distributed Systems Principles & Requirements
+  name: Distributed Systems (Part 1)
+  page: /modules/9-distributed-systems-1
 5b:
-  name: Distributed Systems Architectures
+  name: Distributed Systems (Part 2)
+  page: /modules/10-distributed-systems-2
 6a:
   name: What Makes a Good Test Suite?
 6b:
