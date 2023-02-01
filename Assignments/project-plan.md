@@ -3,7 +3,7 @@ layout: page
 title: Project Plan
 permalink: /assignments/project-plan
 parent: Assignments
-nav_order: 3
+nav_order: 4
 ---
 # Project Plan **Due Wednesday February 15, 11:00am ET**{: .label .label-red }
 All projects will involve frontend and backend development of a new feature for Covey.Town.
