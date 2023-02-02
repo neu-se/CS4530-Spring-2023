@@ -3,7 +3,7 @@ layout: assignment
 title: "Individual Project 2"
 permalink: /assignments/ip2
 parent: Assignments
-nav_order: 1
+nav_order: 2
 due_date: "Wednesday February 22, 11:00am ET"
 submission_notes: Submit via GradeScope
 ---
