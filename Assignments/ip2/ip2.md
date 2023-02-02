@@ -21,51 +21,7 @@ When you complete this deliverable, you should have a fully-functioning implemen
 
 This sequence diagram shows the interaction between the PosterSessionArea high level components to create a new poster session area and synchronize poster star values across multiple frontends (updated by user star/unstar).
 
-<script src="{{site.baseurl}}/assets/js/mermaid.min.js" />
-<div class="mermaid">
- %%{init: { 'theme':'forest', } }%%
-sequenceDiagram
-  autonumber
-  participant PSAM as Avery's PosterViewer 
-  participant PSC as Avery's PosterSessionAreaController
-  participant TC as Avery's TownController (Frontend)
-  participant BC as TownService (Backend)
-  participant OF as Calin's Frontend (Simplified)
-
-  note over PSAM: A user uploads a poster to display, with a title
-  PSAM->>TC: async createPosterSessionArea(newPosterImage, newTitle)
-  activate PSAM
-  TC->>BC: async createPosterSessionArea (REST call)
-  BC-->>TC: Success 
-  TC-->>PSAM: Success
-  deactivate PSAM
-  note over BC: TownService informs all players of new poster
-  par TownService notification to Avery
-    BC->>TC: interactableUpdate(newPosterImageContents, newTitle)
-    TC->>PSC: updateModel(newPosterImageContents, newTitle)
-    PSC->>PSAM: porterImageContentsChange(newPosterImageContents)<br/>posterTitleChange(newPosterTitle)
-    PSAM->>PSAM: Re-renders, now displaying the poster
-  and TownService notification to Calin
-    BC->>OF: interactableUpdate(newPosterImageContents, newTitle)
-    note over OF: 6-9 occur internally here
-  end
-  par Avery's frontend displays number of stars, after starring or removal of star
-    note over PSAM: During starring or unstarring 
-    PSAM->>PSC: Update stars
-    PSC->>TC: emitPosterSessionAreaUpdate
-    TC->>BC: interactableUpdate(stars)
-    BC->>OF: interactableUpdate(stars)
-    note over OF: Number of stars is in sync
-  and Calin's frontend displays the same number of stars in parallel to Avery's
-    note over OF: During starring or unstarring
-    OF->>BC: interactableUpdate(stars)
-    BC->>TC: interactableUpdate(stars)
-    TC->>PSC: updateModel(stars)
-    PSC->>PSAM: posterStarChange (stars)
-    note over PSAM: Number of stars is in sync
-  end
-
-</div>
+[![](https://mermaid.ink/img/pako:eNqlVV1v2jAU_SuWX0ol2gVCqxFNlSAd0h66VoXtYeLFTS5gzbEz24Gxqv9913ECDaEf0yoeavue43vPPTd-pIlKgUbUwK8CZALXnC01y-aS4B8rrJJF9gDar3OmLU94zqQld9PRDWGGjNagtyeG3CljQX_nsAFNjoXH7egpGMOVHGlgsZJWKyGOXTVrQGdqI_fRpDPRuACZnraB4xLoAFPQa54A6YxZ8vN48O3EBcdMcIm31KykM-VZLviCgwN5mFQWiMJ8ShUiMiKFwUWRC8VSQxjJy_KIVSTlJhds2yUbbld4YrkV4Fkc9uzqahZHePFWJiRBHSy0pOlI2PjNLxlbQpfgeuZoqiJYYvkagSWh35rFSDx-i5h07j9PZyRhQlRU4_isymhaJAlGkh0f7vtiqxN_kMKR2_fyuBSey8_lQukMFRKCOFlAG6IWrqBKsl1bGjAkxAYkzGLiTtTSCj60zNmnzLFhGtNhDwK-5SnmdKBcXLbUmpaClWDo0Qib6JA3OBXi_XBE7vTJlT5ExCsmly9lc_rpQX-48uWXrIfRh1eVrvF33cOZRpOijJiU2tRu43JJ7AoamjL08mualsZvaHo7-T9N9zZwTJdnQ6KSpNCeU6IFtmQFuhoGrGLf-3rUF_UQVnUZ4r9GzjPGMlc1W7hBcwvtqlaaaMjUmok6pp2Nl-66KAHPkYXcrVpqozN8_f7iZuOd-yDjtjVhHtIw2fi4U0vW0_fo34xsivy1KQ_h-JPEfQP2Jqi_cG1xnWUMy-BQZceBbcGOgdiN34k5nsKrutaQ28k_KTF7T-TxEW7GNOe0bBae-4EjLyrr49_SFqWkXZqBzhhP8UV9dNtziqJmMKcR_pvCghXCzulcPmGoe12nCKeR1QV0qU-7eoBptGDC4C6k3Cp941_p8rHuUnyvfiiV1UBc0uiR_qZRrzc4D4e9MBiGg14Q9MMu3dIoOA97_YvLfhCEYdgb9PtB-NSlf0qG4Hw4-DgcDMIw6PcuBheDp7_CtbFo?type=png)](https://mermaid.live/edit#pako:eNqlVV1v2jAU_SuWX0ol2gVCqxFNlSAd0h66VoXtYeLFTS5gzbEz24Gxqv9913ECDaEf0yoeavue43vPPTd-pIlKgUbUwK8CZALXnC01y-aS4B8rrJJF9gDar3OmLU94zqQld9PRDWGGjNagtyeG3CljQX_nsAFNjoXH7egpGMOVHGlgsZJWKyGOXTVrQGdqI_fRpDPRuACZnraB4xLoAFPQa54A6YxZ8vN48O3EBcdMcIm31KykM-VZLviCgwN5mFQWiMJ8ShUiMiKFwUWRC8VSQxjJy_KIVSTlJhds2yUbbld4YrkV4Fkc9uzqahZHePFWJiRBHSy0pOlI2PjNLxlbQpfgeuZoqiJYYvkagSWh35rFSDx-i5h07j9PZyRhQlRU4_isymhaJAlGkh0f7vtiqxN_kMKR2_fyuBSey8_lQukMFRKCOFlAG6IWrqBKsl1bGjAkxAYkzGLiTtTSCj60zNmnzLFhGtNhDwK-5SnmdKBcXLbUmpaClWDo0Qib6JA3OBXi_XBE7vTJlT5ExCsmly9lc_rpQX-48uWXrIfRh1eVrvF33cOZRpOijJiU2tRu43JJ7AoamjL08mualsZvaHo7-T9N9zZwTJdnQ6KSpNCeU6IFtmQFuhoGrGLf-3rUF_UQVnUZ4r9GzjPGMlc1W7hBcwvtqlaaaMjUmok6pp2Nl-66KAHPkYXcrVpqozN8_f7iZuOd-yDjtjVhHtIw2fi4U0vW0_fo34xsivy1KQ_h-JPEfQP2Jqi_cG1xnWUMy-BQZceBbcGOgdiN34k5nsKrutaQ28k_KTF7T-TxEW7GNOe0bBae-4EjLyrr49_SFqWkXZqBzhhP8UV9dNtziqJmMKcR_pvCghXCzulcPmGoe12nCKeR1QV0qU-7eoBptGDC4C6k3Cp941_p8rHuUnyvfiiV1UBc0uiR_qZRrzc4D4e9MBiGg14Q9MMu3dIoOA97_YvLfhCEYdgb9PtB-NSlf0qG4Hw4-DgcDMIw6PcuBheDp7_CtbFo)
 
 The sequence beings when a user selects a poster to upload to a `PosterSessionArea` (with an associated title), entering it into the `PosterViewer`:
 
@@ -144,7 +100,8 @@ The `TownController` interacts with the `townService`, receiving `ServerToClient
 
 The `TownController`, in turn, emits `TownEvents` to components in the frontend. These events are the events that the GUI components will observe. Each PosterSessionArea is represented by a `PosterSessionAreaController`, which emits `PosterSessionAreaEvents`. GUI components that display details about each poster sesssion area will subscribe to these events so that they can remain up-to-date with the current state of the interactable.
 
-Your next task is to implement the `PosterSessionAreaController`, along with the event handler for `TownController` to receive `interactableUpdate` messages from the townService, and the hooks for getting the poster image contents and incrementing the number of stars on a given poster session area.
+Your next task is to implement the `PosterSessionAreaController`.
+Along with this, you'll also need to implement the event handler for `TownController` to receive `interactableUpdate` messages from the townService, and the hooks for getting the poster image contents and incrementing the number of stars on a given poster session area (`getPosterSessionAreaImageContents` and `incrementPosterSessionAreaStars` respectively).
 Each of these classes and functions are stubbed out in the handout.
 
 Our handout does *not* include all of the tests in `PosterSessionAreaController.test.ts`. To receive full marks on task 2, you will *also* need enhance these test suites to check all of the behaviors of the methods that you are implementing.
@@ -162,6 +119,7 @@ We strongly suggest writing the tests before (or concurrent) with implementing t
 Note: you may find it useful to use the helper method `isPosterSessionArea` defined in `TypeUtils.ts`
 
 To run the tests for this part, run the command `npm test TestName` in the `frontend` directory, where `TestName` is either `PosterSessionAreaController` or `TownController`.
+You don't need to add any new tests in `TownController.test.ts`.
 
 {::options parse_block_html="true" /}
 <details>
@@ -292,8 +250,53 @@ Point break down for each of the testing tasks:
 
 Partial marks are available for detecting some (but not all) faults. The number of faults detected may not directly correlate with the difficulty of writing the test: there are several faults that are nearly guaranteed to be detected together (writing a test that finds one of them is guaranteed to find both of them), which is why there are different cutoffs for partial and full marks for the tests.
 
+### Task 2: Implement React Hooks (50 points)
+As discussed in Module 8, an effective pattern for building React applications is to use hooks within components to access global state. As part of the refactoring to implement the Interactable abstraction throughout Covey.Town, Avery also refactored the entire React-based frontend to use this pattern of hooks. Before implementing the final component that displays and synchronizes video playback in Viewing Areas, your next task will be to implement these hooks - some of which are related to the interactables, and some of which are related to Avery’s overall refactoring to use more hooks.
 
-### Task 2: GUI Components for Poster Session Areas images (65 points)
+Some of these hooks may require you to include `useEffect` and/or `useState` hooks within the hook that you are building. For each of the hooks, consider the events that they might need to listen to.
+The hooks you'll be implementing are in `PosterSessionAreaController`.
+
+Be sure to follow the [rules of hooks](https://reactjs.org/docs/hooks-rules.html) when implementing your hooks - these will be enforced by the linter, and also by the TAs when grading for style.
+
+{::options parse_block_html="true" /}
+<details>
+<summary markdown="span">View the specification for these tasks</summary>
+
+
+
+PosterSessionAreaController
+
+{% highlight typescript %}
+/**
+ * A hook that returns the number of stars for the poster session area with the given controller
+ */
+export function useStars(controller: PosterSessionAreaController): number
+
+/**
+ * A hook that returns the image contents for the poster session area with the given controller
+ */
+export function useImageContents(controller: PosterSessionAreaController): string | undefined
+
+/**
+ * A hook that returns the title for the poster session area with the given controller
+ */
+export function useTitle(controller: PosterSessionAreaController)
+{% endhighlight %}
+</details>
+
+Grading for Task 2:
+You do not need to write any tests for task 2. The handout contains all of the tests that our grading script will use.
+To run the tests, run `npm test PosterHooks` in the `frontend` directory.
+
+Point break down for each of the implementation tasks:
+* Implement PosterSessionAreaController.ts useStars: 10 points
+* Implement PosterSessionAreaController.ts useImageContents: 10 points
+* Implement PosterSessionAreaController.ts useTitle: 10 points
+
+To receive marks for implementing each feature, your implementation must pass all of our tests for it.
+
+
+### Task 3: GUI Components for Poster Session Areas images (65 points)
 With the controllers implemented, the last task will be to implement the frontend GUI component to display posters in the PosterSessionAreas. Avery has implemented the skeleton for this component, which also includes a form to set the poster image for a poster session area if it hasn't already been set.
 
 Your task is to implement the creation of the poster with the user-specified information in the `SelectPosterModal` component, and then implement the component `PosterImage`, which renders the poster session area's poster image and synchronizes the number of stars with the `PosterSessionAreaController`. You will find that there is already a skeleton of this component created, which renders a an image component and number of stars inside of a `<Modal>`.
@@ -352,8 +355,8 @@ export function PosterImage({
 </details>
 
 
-#### Grading for Task 2:
-You do not need to write any tests for task 2. The handout contains all of the tests that our grading script will use.
+#### Grading for Task 3:
+You do not need to write any tests for task 3. The handout contains all of the tests that our grading script will use.
 
 Point break down for each of the implementation tasks:
 * Implement `createPoster` in SelectPosterModal: 30 points
