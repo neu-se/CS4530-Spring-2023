@@ -10,6 +10,7 @@ submission_notes: Submit via GradeScope
 
 Welcome back! We were pleased to see your thorough implementation of the new PosterSessionArea in the townService of Covey.Town.
 At this point, you've implemented the backend of PosterSessionArea, and the REST/socket-io endpoints to process API calls from clients (whose calls we're now going to add).
+
 While you have been working on these backend features, our UX designer Calin has finished the design of the PosterSessionArea feature, and we're now ready to give you the rest of the feature.
 
 In this (final) deliverable for the PosterSessionArea feature, you will create the following components within the frontend application:
@@ -49,6 +50,9 @@ The objectives of this assignment are to:
 * Write test cases that utilize mocks and spies
 * Write React components and hooks that make use of state
 
+
+<!-- Changelog: -->
+
 ## Getting started with this assignment
 
 Start by downloading the [starter code]({{site.baseurl}}{%link /Assignments/ip2/ip2-handout.zip %}). Extract the archive and run `npm install` to fetch the dependencies.
@@ -60,8 +64,6 @@ Follow the instructions in the  handout's Readme to configure and set up the bac
 
 **NPM install failures**: The libraries used for React require some native binaries to be installed -- code written and compiled for your computer (not JavaScript). If you run into issues with `npm install` not succeeding, please try installing the following libraries using either [Homebrew (if on Mac)](https://brew.sh), apt-get, or your favorite other package manager: `pixman`, `cairo`, `pkgconfig` and `pango`. For example, run `brew install pixman cairo pkgconfig pango`. If you are on a newer Mac with an M1 or M2 chip, you may need to use `arch -arm64 brew install pixman cairo pango`. On Windows: Students have reported seeing the failure `error /bin/bash: node: command not found` upon `npm install` in the `frontend` directory. If you encounter this error, please try to delete the `node_modules` directory and re-run `npm install` in the `frontend` directory from a bash shell instead of a windows command prompt.
 
-
-<!-- Changelog: -->
 
 ## Grading
 This submission will be scored out of 200 points, 180 of which will be automatically awarded by the grading script, with the remaining 20 manually awarded by the course staff.
@@ -124,7 +126,6 @@ You don't need to add any new tests in `TownController.test.ts`.
 {::options parse_block_html="true" /}
 <details>
 <summary markdown="span">View the specification for these tasks</summary>
-
 
 
 PosterSessionAreaController
@@ -368,7 +369,7 @@ To receive marks for implementing each feature, your implementation must pass al
 
 ## Submission Instructions
 Submit your assignment in GradeScope. The easiest way to get into GradeScope the first time is to first
-[sign into Canvas](https://northeastern.instructure.com/courses/99531) and then click the link on our course for "GradeScope". 
+[sign into Canvas](https://northeastern.instructure.com/courses/133054) and then click the link on our course for "GradeScope". 
 You should then also have the option to create an account on GradeScope (if you don't already have one) so that you can log in to GradeScope directly.
 Please contact the instructors immediately if you have difficulty accessing the course on GradeScope.
 
