@@ -3,7 +3,7 @@ layout: page
 title: Project Overview
 permalink: /assignments/project-overview
 parent: Assignments
-nav_order: 3
+nav_order: 2
 ---
 
 # Project Overview
@@ -66,8 +66,7 @@ All projects will involve frontend and backend development of a new feature for 
 Once teams have been formed, you and your team will decide what kind of new feature you would like to build.
 Your feature should be something that can be implemented within the timeframe allotted (5-7 weeks), and will be implemented in a fork of the main Covey.Town codebase.
 Given that you will be up-to-speed on the Covey.Town codebase (and have been introduced to TypeScript, React, NodeJS, and testing frameworks),
-and that you will have a team of three or four, we expect that the feature that you propose will be more complex than the feature implemented in the individual
-homeworks.
+and that you will have a team of three or four, we expect that the feature that you propose will be more complex than the feature implemented in the individual assignments.
 
 The project plan will focus on two sections:
 * User stories and conditions of satisfaction that describe the feature that you plan to implement. **EACH USER STORY OR CONDITION OF SATISFACTION MUST HAVE A PRIORITY (Essential, Desirable, or Optional)**.  The set of Essential items will constitute the "Minimum Viable Product" discussed above.
@@ -76,7 +75,7 @@ The project plan will focus on two sections:
 ### Creating a GitHub Repository
 Your team's development must take place within a private GitHub repository in our GitHub Classroom. We will provide further instructions later.
 
-This repository will be private, and visible only to your team and the course staff. After the semester ends, you are welcome to make it public - you have complete administrative control of the repository.
+This repository will be private, and visible only to your team and the course staff. After the semester ends, you are welcome to make it public - you will have complete administrative control of the repository.
 
 ### Revised Project Plan
 Based on the feedback that you receive from the course staff, you will revise your preliminary project plan, creating a more detailed plan to implement your new feature.
