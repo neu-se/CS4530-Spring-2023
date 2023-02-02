@@ -289,9 +289,9 @@ You do not need to write any tests for task 2. The handout contains all of the t
 To run the tests, run `npm test PosterHooks` in the `frontend` directory.
 
 Point break down for each of the implementation tasks:
-* Implement PosterSessionAreaController.ts useStars: 10 points
-* Implement PosterSessionAreaController.ts useImageContents: 10 points
-* Implement PosterSessionAreaController.ts useTitle: 10 points
+* Implement PosterSessionAreaController.ts useStars: 20 points
+* Implement PosterSessionAreaController.ts useImageContents: 15 points
+* Implement PosterSessionAreaController.ts useTitle: 15 points
 
 To receive marks for implementing each feature, your implementation must pass all of our tests for it.
 
