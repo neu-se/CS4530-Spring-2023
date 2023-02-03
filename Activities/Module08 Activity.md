@@ -6,7 +6,7 @@ nav_exclude: true
 
 # Transcript Client
 
-This project provides starter code for an activity exploring React, Chakra-UI, and React Hooks.
+This project provides [starter code]({{ site.baseurl }}{% link Activities/module08-react-transcript-activity %}) for an activity exploring React, Chakra-UI, and React Hooks.
 
 After installing the dependencies (`npm install`), `npm start` can be used to launch the application in a local web browser. It retrieves transcripts from our REST example server and renders them in a page.
 
