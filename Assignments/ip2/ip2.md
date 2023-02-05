@@ -90,7 +90,7 @@ To receive all 20 points:
 We will review your code and note each violation of this rubric. We will deduct four points for each violation, up to a maximum of deducting all 20 style points.
 
 ## Implementation Tasks
-This deliverable has 2 parts; each part will be graded on its own rubric. You should complete the assignment one part at a time, in the order presented here:
+This deliverable has 3 parts; each part will be graded on its own rubric. You should complete the assignment one part at a time, in the order presented here:
 
 
 ### Task 1: Implement and Test Frontend Controllers (65 points total)
@@ -238,7 +238,7 @@ TownController
 
 #### Grading for Task 1:
 Point break down for each of the implementation tasks:
-* Implement PosterSessionAreaController: 10 points
+* Implement PosterSessionAreaController: 30 points
 * Implement TownController.interactableUpdate and poster hooks: 10 points
 
 To receive marks for implementing each feature, your implementation must pass all of our tests for it.
@@ -247,7 +247,7 @@ Point break down for each of the testing tasks:
 * Test PosterSessionAreaController title property: 7 points
 * Test PosterSessionAreaController imageContents property: 7 points
 * Test PosterSessionAreaController stars property: 7 points
-* Test PosterSessionAreaController toPosterSessionAreaModel: 2 points
+* Test PosterSessionAreaController toPosterSessionAreaModel: 4 points
 
 Partial marks are available for detecting some (but not all) faults. The number of faults detected may not directly correlate with the difficulty of writing the test: there are several faults that are nearly guaranteed to be detected together (writing a test that finds one of them is guaranteed to find both of them), which is why there are different cutoffs for partial and full marks for the tests.
 
