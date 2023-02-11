@@ -136,5 +136,5 @@ Receive full marks if each element on the work breakdown:
 * There are no "Large" tasks scheduled in sprint 0
 * Tasks scheduled to be completed before 3/1 have an update as to their status, and the work breakdown is updated to reflect the result of these tasks.
 
-**Please note that in order to receive full credit for the final delivered product, each team is expected to deliver Minimum Viable Product and additional delivered features proposed in the project plan. Please plan your schedule accordingly.**
+**Please note that in order to receive full credit for the final delivered product, each team is expected to deliver Minimum Viable Product and additional features proposed in the project plan. Please plan your work accordingly.**
 
