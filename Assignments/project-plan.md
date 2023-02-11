@@ -38,6 +38,9 @@ The course staff will provide feedback on your project to help ensure that the s
 
 We list page *maximums* for each section as general guidance of what we are willing to grade. Please do not feel compelled to use all of the pages provided, and remember that a diagram or table can be as expressive (or more) as a comparable amount of text.
 
+## Changelog
+* 2/10/23: Clarified that the length of problem statement should be 1-3 paragraphs
+
 ## Problem Statement, User Stories and Acceptance Criteria (max 4 pages)
 Your project plan should begin with a 1-3 paragraph introductory problem statement: what problem in Covey.Town does your (proposed) feature solve? Provide a paragraph (or two) that describes why you are interested in building this feature. 
 
@@ -105,7 +108,7 @@ This assignment is due Feb 15 at 11am.
 The project plan will account for 10% of your project grade, and will be graded out of 100 points. The grading of the project plan is further broken down as follows:
 
 ### Introductory problem statement (5 points): 
-* Receive full marks if there is a narrative consisting of 4-10 sentences that describes a specific problem that your project aims to solve.
+* Receive full marks if there is a narrative consisting of 1-3 paragraphs that describes a specific problem that your project aims to solve.
 * Receive partial credit if the narrative is present, but does not describe a problem that the project aims to solve
 
 ### User stories (15 points):
