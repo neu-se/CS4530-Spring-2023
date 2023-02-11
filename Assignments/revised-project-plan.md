@@ -51,7 +51,7 @@ For example: Consider if you were proposing the "Viewing Area" project (the indi
 **Do not wait for your TA feedback to begin this work.** You probably know more about the details of your project then they do. It will be helpful for all concerned if your Project Plan lists the major unknowns or things that you expect to need help with-- this will help the TA provide more useful feedback for you
 
 Be realistic, and leave time for contingencies (including the time around the midterm exam on March 13-14).
-Remember that you will need to have a demo prepared of your feature by 4/12 - just 7 weeks from the due date of this assignment (not counting spring break).
+Remember that you will need to have a demo prepared of your feature by 4/12 - just 5 weeks from the due date of this assignment (not counting spring break).
 
 If you are uncertain that some tasks will be feasible, then be sure to include evaluation tasks earlier-on in the project that will allow for "go/no-go" decisions to move forward on a task or drop it.
 
@@ -127,7 +127,7 @@ Receive full marks if each element on the work breakdown:
 * Has a responsible justification for that estimation
 * Every "large" task:
   * Is accompanied by a reasonable explanation of why the team is unnable to provide a responsible estimate
-  * Is accompanied by at least one small or medium task, scheduled well-before the "large" task is due to be completed. We would expect that most of these research tasks are scheduled to sprint 0, or perhaps sprint 1.
+  * Is accompanied by at least one small or medium task, scheduled well-before the "large" task is due to be completed. We would expect that most of these research tasks are scheduled to sprint -1, or perhaps sprint 0.
 
 #### Scheduling of tasks (5 points):
 Receive full marks if each element on the work breakdown:
@@ -136,5 +136,5 @@ Receive full marks if each element on the work breakdown:
 * There are no "Large" tasks scheduled in sprint 0
 * Tasks scheduled to be completed before 3/1 have an update as to their status, and the work breakdown is updated to reflect the result of these tasks.
 
-** Please note that in order to receive full credit for the final delivered product, each team is expected to deliver Minimum Viable Product and additional delivered features proposed in the project plan. Please plan your schedule accordingly.
+**Please note that in order to receive full credit for the final delivered product, each team is expected to deliver Minimum Viable Product and additional delivered features proposed in the project plan. Please plan your schedule accordingly.**
 
