@@ -99,7 +99,8 @@ Each of the three user stories will account for 5% of your grade on this assignm
   * The user story satisfies the INVEST criteria for good user stories (construed quite broadly)
   * The user story includes conditions of satisfaction that cover the "normal" expected behavior of the feature, and any relevant error cases
   * Conditions of satisfaction can be turned into Testable behaviors
-  * Conditions of satisfaction are prioritized 
+  * Conditions of satisfaction are prioritized
+  * Any deficiencies or concerns noted by your TA mentor on your preliminary plan are addressed
 
 ### Work breakdown (50 points):
 Your work breakdown will be evaluated holistically on the following rubric:
@@ -120,6 +121,7 @@ However, we believe that this list is exhaustive (we do not expect other kinds o
 Receive full marks if:
 * Each element on the work breakdown is assigned to one team member
 * The distribution of tasks of each size are roughly similar between the whole team (no single person is assigned significantly more or fewer tasks of one size)
+* Any deficiencies or concerns noted by your TA mentor on your preliminary plan are addressed
 
 #### Sizing of tasks (20 points):
 Receive full marks if each element on the work breakdown:
@@ -128,6 +130,7 @@ Receive full marks if each element on the work breakdown:
 * Every "large" task:
   * Is accompanied by a reasonable explanation of why the team is unnable to provide a responsible estimate
   * Is accompanied by at least one small or medium task, scheduled well-before the "large" task is due to be completed. We would expect that most of these research tasks are scheduled to sprint -1, or perhaps sprint 0.
+* Any deficiencies or concerns noted by your TA mentor on your preliminary plan are addressed
 
 #### Scheduling of tasks (5 points):
 Receive full marks if each element on the work breakdown:
@@ -135,6 +138,6 @@ Receive full marks if each element on the work breakdown:
 * There are no obvious constraint violations (tasks that logically must happen before others should be scheduled before them)
 * There are no "Large" tasks scheduled in sprint 0
 * Tasks scheduled to be completed before 3/1 have an update as to their status, and the work breakdown is updated to reflect the result of these tasks.
+* Any deficiencies or concerns noted by your TA mentor on your preliminary plan are addressed
 
 **Please note that in order to receive full credit for the final delivered product, each team is expected to deliver Minimum Viable Product and additional features proposed in the project plan. Please plan your work accordingly.**
-
