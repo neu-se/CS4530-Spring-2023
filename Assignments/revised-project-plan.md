@@ -1,63 +1,37 @@
 ---
 layout: page
-title: Project Plan
-permalink: /assignments/project-plan
+title: Revised Project Plan
+permalink: /assignments/revised-project-plan
 parent: Assignments
-nav_order: 4
+nav_order: 5
 ---
-# Project Plan **Due Wednesday February 15, 11:00am ET**{: .label .label-red }
-All projects will involve frontend and backend development of a new feature for Covey.Town.
-Once teams have been formed, you and your team will decide what kind of new feature you would like to build.
-Your feature should be something that can be implemented within the timeframe allotted (5 weeks, plus 2 weeks of planning), and will be implemented in a fork of the main Covey.Town codebase.
-You can play with a demo deployment of the app at [app.covey.town](https://app.covey.town), and in the coming weeks, we will provide tutorials and instructions for you to run the entire application in a local development environment, and also to deploy it to the cloud.
-Given that you will be up-to-speed on the Covey.Town codebase (and have been introduced to TypeScript, React, NodeJS, and testing frameworks),
-and that you will have a team of four, we expect that the feature that you propose will be at least as complex as the feature implemented in the individual assignments.
 
-Feel free to look at existing systems like [Gather.Town](https://gather.town), [Sococo](https://www.sococo.com), [Reslash](https://reslash.co), [Screen](https://screen.so/home), and [Gatherly.IO](https://www.gatherly.io) for inspiration on new features to build for Covey.Town. Also see the recent NYTimes Magazine article [The Race to Fix Fix Virtual Meetings](https://www.nytimes.com/2021/02/17/magazine/video-conference.html) ([click here to access through NEU libraries](https://link.ezproxy.neu.edu/login?url=https://www.proquest.com/blogs,-podcasts,- websites/meet-me-at-virtual-water-cooler/docview/2489980229/se-2?accountid=12826])). 
-Examples of features that students might propose include:
-* Create some new form of "Interactable" object, such as a whiteboard or game
-* Create an interface for uploading and choosing between different maps and avatars (will require also learning to use the [Phaser3 API](https://photonstorm.github.io/phaser3-docs/index.html))
-* Add screenreader support - generate a textual representation of the map and what players can do to interact with it
-* Support real persistence: store data in a database (e.g. Postgres + GraphQL), allow users to register and save a profile (e.g. using Auth0) 
-* Add direct messaging, image messaging, and other chat features
+# Revised Project Plan **Due Wednesday March 1, 11:00am ET**{: .label .label-red }
+You should use the feedback on your preliminary project plan to revise the scope of your project, and discuss any changes with your assigned TA. The goal of this assignment is to finalize the intended scope of your project based on these discussions and to outline the tasks that you will need to accomplish in order to complete your project.
 
-Please note that multiple teams might choose to propose the same feature, or a variation of that same feature - this is OK.
-
-When considering your project, please keep in mind that you will be allowed to publicly post your project online: while your immediate audience for the project is the course staff, if you are ultimately looking for software engineering jobs or co-ops, this project can be a useful piece of your portfolio. If you build a sufficiently maintainable feature (i.e., if your project is particularly well architected and tested), we will also consider pull requests to merge your feature into the main Covey.Town codebase on GitHub, allowing you to also tell recruiters that you have contributed a feature to an open source project on GitHub!
-
-
-The project plan will include:
-* Introductory problem statement
-* User stories and acceptance criteria: high level description of how users will interact with your new feature. 
-* Work breakdown: Define engineering tasks that will be necessary to implement your new feature. Map each task to a sprint. 
-
-Your assigned TA mentor will review your project plan and provide you with feedback on the scope and details provided in this plan.
-Your team will self-organize, as agile teams do, and will enhance and adapt its plan during the project lifecycle.
-As such, the primary goal of this document is to *begin* the planning process, and *not* to produce a detailed plan that must be followed precisely.
-The course staff will provide feedback on your project to help ensure that the scope of your project is appropriate.
+Your assigned TA mentor will review your project plan and provide you with feedback on the scope and details provided in your preliminary plan.
+In this deliverable, you will revise your project plan based on that feedback, and any preliminary research tasks that you have completed.
+If there were any deficiencies or concerns noted by your TA mentor on your preliminary plan, you *must* address those concerns in this revised plan.
+If you are unsure of how to address any of these concerns or if you have addressed them, please discuss them with your TA mentor before submitting this revised plan.
 
 We list page *maximums* for each section as general guidance of what we are willing to grade. Please do not feel compelled to use all of the pages provided, and remember that a diagram or table can be as expressive (or more) as a comparable amount of text.
 
-## Changelog
-* 2/10/23: Clarified that the length of problem statement should be 1-3 paragraphs
-
-## Problem Statement, User Stories and Acceptance Criteria (max 4 pages)
-Your project plan should begin with a 1-3 paragraph introductory problem statement: what problem in Covey.Town does your (proposed) feature solve? Provide a paragraph (or two) that describes why you are interested in building this feature. 
+## Revised Problem Statement, User Stories and Acceptance Criteria (max 4 pages)
+Your revised project plan should begin with a 1-3 paragraph introductory problem statement: what problem in Covey.Town does your (proposed) feature solve? Provide a paragraph (or two) that describes why you are interested in building this feature. 
 
 Given the problem statement, develop three user stories that show how a user would interact with the feature. User stories are requirements specified in the format 
 "As a < type of user >, I want < some goal > so that < some reason >."
-My conditions of satisfaction are < list of common cases and special cases that must work >.
+My conditions of satisfaction are < list of common cases and special cases that must work >. Please make sure that your conditions of satification are complete (i.e., cover all common cases) and can be turned into testable behaviors.
 
-Please make sure that your conditions of satification are complete (i.e., cover all common cases) and can be turned into testable behaviors.
-
-**EACH USER STORY OR CONDITION OF SATISFACTION MUST HAVE A PRIORITY (Essential, Desirable, or Optional)**.  The set of Essential items will constitute the "Minimum Viable Product".
+**EACH CONDITION OF SATISFACTION MUST HAVE A PRIORITY (Essential, Desirable, or Optional)**.  The set of essential items will constitute the "Minimum Viable Product".
 
 You should include three different user stories to describe how users will interact with your feature.
 Your three user stories should cover the key behavior that your feature will provide.
-
 Do not provide more than three user stories. Your problem statement and description of user stories and conditions of satisfaction should be between 2-4 pages.
 
-## Work Breakdown (max 10 pages)
+This revised project plan should be a standalone document (it is OK to copy/paste from the preliminary plan in this case).
+
+## Revised Work Breakdown (max 10 pages)
 Given the project concept that you have chosen and the functionality that you expect to implement to satisfy your user stories, define a breakdown of the work that will be necessary to complete the project.
 
 A work breakdown includes all of the tasks necessary to accomplish the project, and will be an artifact that we will refer back to throughout the project to evaluate whether you are making satisfactory progress.
@@ -78,10 +52,11 @@ For example: Consider if you were proposing the "Viewing Area" project (the indi
 
 Be realistic, and leave time for contingencies (including the time around the midterm exam on March 13-14).
 Remember that you will need to have a demo prepared of your feature by 4/12 - just 7 weeks from the due date of this assignment (not counting spring break).
+
 If you are uncertain that some tasks will be feasible, then be sure to include evaluation tasks earlier-on in the project that will allow for "go/no-go" decisions to move forward on a task or drop it.
 
 We understand that it is quite difficult to estimate the technical complexity of a new project (as you are doing in the case of this course).
-We will provide you with feedback on this preliminary project plan, which you will use to produce a revised project plan (due Mar 1).
+
 Throughout the project period, teams will meet regularly with their dedicated TA Mentor, who will help track progress on a week-to-week basis and help to determine when adjustments to the project scope are needed.
 
 Each work item should contain the following information:
@@ -99,29 +74,34 @@ Each work item should contain the following information:
   * Sprint 2: Mar 15-Mar 29
   * Sprint 3: Mar 29-Apr 12
 
+
 Your work breakdown should take the format of a simple textual list.
- 
+
+**Mandatory update for all teams:** Even if your work breakdown is entirely unchanged compared to the preliminary plan, please be certain to include updates on all "sprint -1" tasks (those which were scheduled to be completed before the due date of this revised plan). Many teams included research/learning tasks in the first week to help inform the rest of the work breakdown: you should be certain to revise your work breakdown based on what you have learned so far.
+
+
 ## Submission 
-Your project plan should be submitted as a single PDF in GradeScope to the assignment "Preliminary Project Plan."
+Your revised project plan should be submitted as a single PDF in GradeScope to the assignment "Revised Project Plan."
 Each team submits a single document to GradeScope: when uploading the submission, GradeScope will ask you who your teammates are, and then will associate this submission with every member of your team. Be sure to tag your team mates.
-This assignment is due Feb 15 at 11am. 
+This assignment is due Mar 1 at 11am. 
 
 ## Grading
-The project plan will account for 10% of your project grade, and will be graded out of 100 points. The grading of the project plan is further broken down as follows:
+The revised project plan will account for 10% of your project grade, and will be graded out of 100 points. The grading of the revised project plan is further broken down as follows:
 
 ### Introductory problem statement (5 points): 
 * Receive full marks if there is a narrative consisting of 1-3 paragraphs that describes a specific problem that your project aims to solve.
 * Receive partial credit if the narrative is present, but does not describe a problem that the project aims to solve
 
-### User stories (15 points):
-Each of the three user stories will account for 5% of your grade on this assignment and will be graded as follows:
+### User stories (45 points):
+Each of the three user stories will account for 5% of your grade on this assignment and will begraded as follows:
 * Receive full marks if:
   * The user story fits the problem statement
   * The user story satisfies the INVEST criteria for good user stories (construed quite broadly)
   * The user story includes conditions of satisfaction that cover the "normal" expected behavior of the feature, and any relevant error cases
-  * The user story or conditions of satisfaction include priority
+  * Conditions of satisfaction can be turned into Testable behaviors
+  * Conditions of satisfaction are prioritized 
 
-### Work breakdown (80 points):
+### Work breakdown (50 points):
 Your work breakdown will be evaluated holistically on the following rubric:
 
 #### Coverage of tasks needed (20 points):
@@ -136,12 +116,12 @@ Receive full marks if the work breakdown includes all (reasonably expected) task
 It is not possible to state generically for all projects whether *all* of the above types of tasks are necessary.
 However, we believe that this list is exhaustive (we do not expect other kinds of tasks).
 
-#### Assignment of tasks (10 points):
+#### Assignment of tasks (5 points):
 Receive full marks if:
 * Each element on the work breakdown is assigned to one team member
 * The distribution of tasks of each size are roughly similar between the whole team (no single person is assigned significantly more or fewer tasks of one size)
 
-#### Sizing of tasks (40 points):
+#### Sizing of tasks (20 points):
 Receive full marks if each element on the work breakdown:
 * Has a size estimate (small, medium, or large) that is provided by the team member assigned the task.
 * Has a responsible justification for that estimation
@@ -149,8 +129,12 @@ Receive full marks if each element on the work breakdown:
   * Is accompanied by a reasonable explanation of why the team is unnable to provide a responsible estimate
   * Is accompanied by at least one small or medium task, scheduled well-before the "large" task is due to be completed. We would expect that most of these research tasks are scheduled to sprint 0, or perhaps sprint 1.
 
-#### Scheduling of tasks (10 points):
+#### Scheduling of tasks (5 points):
 Receive full marks if each element on the work breakdown:
 * Is assigned to a sprint
 * There are no obvious constraint violations (tasks that logically must happen before others should be scheduled before them)
 * There are no "Large" tasks scheduled in sprint 0
+* Tasks scheduled to be completed before 3/1 have an update as to their status, and the work breakdown is updated to reflect the result of these tasks.
+
+** Please note that in order to receive full credit for the final delivered product, each team is expected to deliver Minimum Viable Product and additional delivered features proposed in the project plan. Please plan your schedule accordingly.
+
