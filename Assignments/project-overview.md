@@ -34,7 +34,7 @@ Your overall project grade (which will account for 40% of your final grade in th
 * Planning (20%)
   * This includes the Preliminary Project Plan and the Revised Project Plan.
 * Process (20%)
-  * This includes: use of a structured development process, including code reviews, timely completion of weekly progress reports and team surveys, and weekly meetings with TA Mentor.
+  * This includes: use of a structured development process, including code reviews, timely completion of progress reports and individual/team surveys, and weekly meetings with TA Mentor.
   * This also includes appropriate division of labor within the project (i.e., roughly equal). For full credit, each member of the team must have at least 4 commits in the final delivered code.
 * Product (40%)
   * 20% Successful delivery of your Minimum Viable Product as defined in your project plan
