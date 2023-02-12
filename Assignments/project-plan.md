@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Project Plan
+title: Preliminary Project Plan
 permalink: /assignments/project-plan
 parent: Assignments
 nav_order: 4
