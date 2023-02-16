@@ -1,0 +1,71 @@
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Building on the Heroku-22 stack
+remote: -----> Using buildpack: heroku/nodejs
+remote: -----> Node.js app detected
+remote:        
+remote: -----> Creating runtime environment
+remote:        
+remote:        NPM_CONFIG_PRODUCTION=false
+remote:        NPM_CONFIG_LOGLEVEL=error
+remote:        USE_NPM_INSTALL=true
+remote:        NODE_VERBOSE=false
+remote:        NODE_ENV=production
+remote:        NODE_MODULES_CACHE=true
+remote:        
+remote: -----> Installing binaries
+remote:        engines.node (package.json):  unspecified
+remote:        engines.npm (package.json):   unspecified (use default)
+remote:        
+remote:        Resolving node version 16.x...
+remote:        Downloading and installing node 16.18.0...
+remote:        Using default npm version: 8.19.2
+remote:        
+remote: -----> Restoring cache
+remote:        - node_modules
+remote:        
+remote: -----> Installing dependencies
+remote:        Installing node modules (package.json + package-lock)
+remote:        
+remote:        added 641 packages, and audited 824 packages in 15s
+remote:        
+remote:        119 packages are looking for funding
+remote:          run `npm fund` for details
+remote:        
+remote:        3 moderate severity vulnerabilities
+remote:        
+remote:        Some issues need review, and may require choosing
+remote:        a different dependency.
+remote:        
+remote:        Run `npm audit` for details.
+remote:        
+remote: -----> Build
+remote:        Running build
+remote:        
+remote:        > transcript-server-openapi@1.0.0 build
+remote:        > tsc -p .
+remote:        
+remote:        
+remote: -----> Caching build
+remote:        - node_modules
+remote:        
+remote: -----> Pruning devDependencies
+remote:        Skipping because NPM_CONFIG_PRODUCTION is 'false'
+remote:        
+remote: -----> Build succeeded!
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 83M
+remote: -----> Launching...
+remote:        Released v9
+remote:        https://transcript-demo.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Starting November 28th, 2022, free Heroku Dynos, free Heroku Postgres, and free Heroku Data for Redis® will no longer be available.
+remote: 
+remote: If you have apps using any of these resources, you must upgrade to paid plans by this date to ensure your apps continue to run and to retain your data. For students, we will announce a new program by the end of September. Learn more at https://blog.heroku.com/next-chapter
+remote: 
+remote: Verifying deploy... done.
