@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Working with 
+title: Working with REST / OpenAPI
 nav_exclude: true
 ---
 # REST Transcript Activity
