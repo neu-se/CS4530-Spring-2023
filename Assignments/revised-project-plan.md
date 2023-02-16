@@ -75,7 +75,7 @@ Each work item should contain the following information:
   * Sprint 3: Mar 29-Apr 12
 
 
-Your work breakdown should take the format of a simple textual list.
+Your work breakdown may take the format of a simple textual list.
 
 **Mandatory update for all teams:** Even if your work breakdown is entirely unchanged compared to the preliminary plan, please be certain to include updates on all "sprint -1" tasks (those which were scheduled to be completed before the due date of this revised plan). Many teams included research/learning tasks in the first week to help inform the rest of the work breakdown: you should be certain to revise your work breakdown based on what you have learned so far.
 
