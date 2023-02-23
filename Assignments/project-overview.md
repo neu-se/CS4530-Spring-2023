@@ -56,10 +56,14 @@ your preferences for teammates. The instructors will assign students to the team
 All students in each team must be in the same section of the class.
 
 
-### Team Meetings with TA Mentor
-Each team will be assigned a TA to act as a mentor, who will also serve as your point of contact for project grading.
+### Software Development Process and Team Meetings with TA Mentor
+Each team will be assigned a TA to act as a mentor, who will also serve as your point of contact for project grading and will work closely with you for the entire project.
+
 During the week of 02/06-12, you will have a "Kickoff Meeting" with your TA mentor, where you will meet your TA mentor and have the opportunity to share any early ideas that you might want feedback on before submitting the your preliminary project plan.
+
 Once project begins in full force, you will have weekly meetings with your TA mentor (scheduled at your team's and the TA's convenience) in order to help ensure that you are making progress on the project, and to help address problems that you encounter (be they technical or non-technical problems).
+
+Each team is expected to use of a structured development process, including code reviews. You will also need to ensure appropriate division of labor within the project (i.e., roughly equal). Teams will also be expected to complete regular progress reports (or sprint retrospectives), and individual/team surveys. Peer evaluation will also be used (for Week 6, 8, 10-14). 
 
 ###  Preliminary Project Plan
 All projects will involve frontend and backend development of a new feature for Covey.Town.
@@ -86,12 +90,10 @@ The project plan will include:
 
 Your team will self-organize, as agile teams do, and will use the work breakdown and schedule as the basis for weekly check-ins with your team's TA.
 
-
 ### Project Implementation and Documentation
-You will be assigned a mentor for your project who will work closely with you for the entire project. You will coordinate with the mentor to setup weekly meetings and regular sprint demos. Peer evaluation will also be used.
+
 Your final team deliverable will be a "release" of your new feature on GitHub (with tests), and will be accompanied by a demo.
-*Optionally,* you may also open a pull request to merge your feature into our main repository (submitting a pull request, or the pull request being merged into our
-codebase is independent of the grade you receive, but provides a platform for more visiblity of your project). 
+*Optionally,* you may also open a pull request to merge your feature into our main repository (submitting a pull request, or the pull request being merged into our codebase is independent of the grade you receive, but provides a platform for more visiblity of your project). 
 
 Your final team deliverable will include:
 * The implementation of your new feature
