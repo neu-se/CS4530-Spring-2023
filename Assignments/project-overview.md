@@ -14,7 +14,6 @@ Covey.Town provides a virtual meeting space where different groups of people can
 Covey.Town is inspired by existing products like [Gather.Town](https://gather.town), [Sococo](https://www.sococo.com), and [Gatherly.IO](https://www.gatherly.io) --- but it is an open source effort, and the features will be proposed and implemented by you!
 All implementation will take place in the TypeScript programming language, using React for the user interface.
 
-
 Select projects from Fall 2022 are hosted [in our project showcase](https://neu-se.github.io/CS4530-Fall-2022/assignments/project-showcase).
 
 
@@ -24,8 +23,8 @@ Select projects from Fall 2022 are hosted [in our project showcase](https://neu-
 | -----| ----------- | ----------- |
 | 02/01/23| Team Formation Survey | Specify preferences for teammates |
 | 02/07/23| Project Kick-off Meeting | Schedule a meeting with your Mentor TA during this week |
-| 02/15/23 | Preliminary Project Plan | Propose a new feature for Covey.Town that can be planned and implemented within 7 weeks |
-| 03/01/23 | Revised Project Plan | Refine the scope of your feature based on staff feedback, define detailed requirements and project acceptance criteria. |
+| 02/15/23 | [Preliminary Project Plan]({{ site.baseurl }}{% link Assignments/project-plan.md %}) | Propose a new feature for Covey.Town that can be planned and implemented within 7 weeks |
+| 03/01/23 | [Revised Project Plan]({{ site.baseurl }}{% link Assignments/revised-project-plan.md %}) | Refine the scope of your feature based on staff feedback, define detailed requirements and project acceptance criteria. |
 | 04/12/23 | Project Delivery - Implementation and Documentation | Deliver your new feature, including design documentation and tests |
 
 ### Summary of Project Grading
@@ -56,14 +55,12 @@ your preferences for teammates. The instructors will assign students to the team
 All students in each team must be in the same section of the class.
 
 
-### Software Development Process and Team Meetings with TA Mentor
+### Team Meetings with TA Mentor
 Each team will be assigned a TA to act as a mentor, who will also serve as your point of contact for project grading and will work closely with you for the entire project.
 
 During the week of 02/06-12, you will have a "Kickoff Meeting" with your TA mentor, where you will meet your TA mentor and have the opportunity to share any early ideas that you might want feedback on before submitting the your preliminary project plan.
 
 Once project begins in full force, you will have weekly meetings with your TA mentor (scheduled at your team's and the TA's convenience) in order to help ensure that you are making progress on the project, and to help address problems that you encounter (be they technical or non-technical problems).
-
-Each team is expected to use of a structured development process, including code reviews. You will also need to ensure appropriate division of labor within the project (i.e., roughly equal). Teams will also be expected to complete regular progress reports (or sprint retrospectives), and individual/team surveys. Peer evaluation will also be used (for Week 6, 8, 10-14). 
 
 ###  Preliminary Project Plan
 All projects will involve frontend and backend development of a new feature for Covey.Town.
@@ -77,9 +74,9 @@ The project plan will focus on two sections:
 * Work breakdown: Map your user stories to engineering tasks. Assign each task to a team member (or pair of team members), provide an estimate for how long each task will take, a rationale for that estimate, and schedule those stories into sprints.
 
 ### Creating a GitHub Repository
-Your team's development must take place within a private GitHub repository in our GitHub Classroom. We will provide further instructions later.
+Your team's development must take place within a GitHub repository in our GitHub Classroom. This repository will be private, and visible only to your team and the course staff. After the semester ends, you are welcome to make it public - you will have complete administrative control of the repository.
 
-This repository will be private, and visible only to your team and the course staff. After the semester ends, you are welcome to make it public - you will have complete administrative control of the repository.
+We will set up these repositoties for all groups and will also provide the starter code for the project (after the revised project plans are submitted).
 
 ### Revised Project Plan
 Based on the feedback that you receive from the course staff, you will revise your preliminary project plan, creating a more detailed plan to implement your new feature.
@@ -90,6 +87,10 @@ The project plan will include:
 
 Your team will self-organize, as agile teams do, and will use the work breakdown and schedule as the basis for weekly check-ins with your team's TA.
 
+### Software Development Process
+Each team is expected to use of a structured development process, including code reviews. You will also need to ensure appropriate division of labor within the project (i.e., roughly equal). Teams will also be expected to complete regular progress reports (or sprint retrospectives), and individual/team surveys. Peer evaluation will also be used (for Week 6, 8, 10-14). 
+Please note that one of the most important factors in successfully completing a team project is having effective communication. 
+
 ### Project Implementation and Documentation
 
 Your final team deliverable will be a "release" of your new feature on GitHub (with tests), and will be accompanied by a demo.
@@ -99,7 +100,7 @@ Your final team deliverable will include:
 * The implementation of your new feature
 * Automated tests for your new feature
 * A Final Report
-* A Poster
+* A Poster & Demo (each instructor will provide specifics of the demo, which might very for each section)
     
 Accompanying the final team deliverable will be an *individual reflection*, which every student must submit on their own, which will include your reflections on:
 * The evolution of your project concept: How does the project that you delivered compare to what you originally planned to deliver? What caused these deviations?
