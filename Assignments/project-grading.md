@@ -9,7 +9,7 @@ nav_order: 7
 Each project will be graded by the team's assigned TA mentor and the instructor. For most of the submission components below, we provide two benchmark rubrics: one for a submission that is satisfactory (full marks), and one that would be meeting our minimum expectations (a pass). Rubric for remaining components will be provided by individual instructors. In practice, when grading projects we will usually assign numeric grades and provide partial credit, using these rubrics as guidelines for those two extremes.
 
 ### Adjustments in project scope
-We are hopeful that all teams will deliver (all essential and development) features proposed in the revised project plan. However, it is possible that there might be some minor deviations from the origional plan - in the five-week implementation period, there are sure to be some teams that encounter unexpected technical hurdles. As described in greater detail in the rubrics below, teams that have regular communication with their TA regarding their project status may have the opprtunity to request variances to their project scope. 
+We are hopeful that all teams will deliver (all essential and development) features proposed in the revised project plan. However, it is possible that there might be some minor deviations from the origional plan - in the five-week implementation period, there are sure to be some teams that encounter unexpected technical hurdles. As described in greater detail in the rubrics below, teams that have regular communication with their TA regarding their project status may have the opportunity to request variances to their project scope. 
 
 In cases where team members do not equally contribute to the project, we may assign different grades to different individuals, up to an extreme of deducting 50% of the marks from a student. We will evaluate each individual's contribution on the basis of a variety of factors, including progress reports at weekly meetings, through inspecting version control history, through each student's self-reflection, and through each team's (or student's) peer evaluations during and/or at the end of the project. We will make regular efforts to collect and distribute this feedback throughout the project. Our ultimate goal is for all students to participate and receive full marks.
 
@@ -31,11 +31,9 @@ In cases where team members do not equally contribute to the project, we may ass
       * 10% Final Report
       * 10% Poster and Demo
 
-
 This adds up to 100%; this sum is worth 40% of the course grade.
 
 ## Detailed Rubrics
-
 Here are the detailed rubrics for the final deliverables:
 
 ### Minimum Viable Product (20%) 
@@ -66,9 +64,9 @@ The project must include evidence of testing. Ideally, all new features will be 
 
 ### Process (20%)
 
-The Process grade includes: use of a structured development process, including code reviews,  timely completion of weekly progress reports and team surveys, and weekly meetings with TA Mentor. It also includes appropriate division of labor within the project.  For full credit, each member of the team must have at least 4 commits in the final delivered code.
+The Process grade includes: use of a structured development process, including code reviews, timely completion of sprint progress reports/retrospectives, individual/team surveys, peer evaluations and weekly meetings with TA Mentor (for Week 6, 8, 10-14). It also includes appropriate division of labor within the project. For full credit, each member of the team must have at least 4 commits in the final delivered code.
 
-These items will be evaluated using the rubrics below.  The allocation of the 20% credit will be announced later.
+These items will be evaluated using the rubrics below. 
 
 #### Satisfactory:
 * There is a clear development history visible from the git repository: features were delivered incrementally, and not in a single (or several) commits at the end of the project
@@ -86,7 +84,6 @@ These items will be evaluated using the rubrics below.  The allocation of the 20
   
 #### Individual grading for Process component
 Team members with unexcused absences from TA Meetings, or with fewer than 4 commits during the lifespan of the project, may receive a lowered grade for the Process component. 
-
 
 ### Final Report (10%)
 The final report should consist of three sections:
@@ -171,7 +168,6 @@ Reflect on your team dynamic: Provide a frank (and ideally, blameless) postmorte
 * Is at least 2 paragraphs long;
 * Includes at least 1 paragraph reflecting on your own performance as a team member on this project, including what you would have done differently, given what you know now;
 * Includes at least 1 paragraph reflecting on your overall team dynamic, including strengths and weaknesses. Reflect on how you might have organized your team differently given what you know now.
-
 
 ### Change Log
 * None.
