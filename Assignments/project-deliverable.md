@@ -8,10 +8,10 @@ nav_order: 6
 # Project: Final Deliverable **Due Wednesday 04/12/2023 11am ET**{: .label .label-red }
 The final project deliverable is the implementation, available in github and deployed on Netlify and Heroku, and the documentation turned in to Canvas. It also includes poster and/or demos.
 
-# Project Implementation and Documentation
+## Project Implementation and Documentation
 Your final team deliverable will be a "release" of your new feature on GitHub (with tests), and will be accompanied by a demo. You will submit the link of your hosted app on Canvas.
 
-## Contents
+### Contents
 
 Your final team deliverable will include:
 * The implementation of your new feature, deployed to Netlify + Heroku
@@ -45,5 +45,4 @@ Create a PDF of your reflection, and submit it to Canvas, under the assignment "
 
 ## Grading
 
-Details on grading may be found at
-[Assignments/project-grading.md]({{ site.baseurl }}{% link Assignments/project-grading.md %}),
+Details on grading may be found at [Project Grading]({{ site.baseurl }}{% link Assignments/project-grading.md %})

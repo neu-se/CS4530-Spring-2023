@@ -22,7 +22,6 @@ In cases where team members do not equally contribute to the project, we may ass
 * Process (20%)
   * This includes: use of a structured development process, including code reviews,  timely completion of sprint progress reports and individual/team surveys, and weekly meetings with TA Mentor.
   * This also includes appropriate division of labor within the project.  For full credit, each member of the team must have at least 4 commits in the final delivered code.
-  * The breakdown of these components will be supplied later.
 * Product (40%)
   * 20% Successful delivery of your Minimum Viable Product as defined in your project plan
   * 10% Additional delivered features
@@ -63,9 +62,9 @@ The project must include evidence of testing. Ideally, all new features will be 
 * Tests may contain ESlint warnings (but no errors); does not include any eslint-disable or ts-ignore flags
 
 ### Process (20%)
-
-The Process grade includes: use of a structured development process, including code reviews, timely completion of sprint progress reports/retrospectives, individual/team surveys, peer evaluations and weekly meetings with TA Mentor (for Week 6, 8, 10-14). It also includes appropriate division of labor within the project. For full credit, each member of the team must have at least 4 commits in the final delivered code.
-
+The Process grade includes: use of a structured development process, including code reviews, timely completion of sprint progress reports/retrospectives, individual/team surveys, peer evaluations and weekly meetings with TA Mentor (for Week 6, 8, 10-14). It also includes appropriate division of labor within the project. For full credit, each member of the team must have at least 4 commits in the final delivered code. 
+* Ongoing development progress including code reviews, github commits, etc. count 10% of the grade
+* Peer evaluations, TA meeting, submission of surveys/reports counts 10% of the project grade. 
 These items will be evaluated using the rubrics below. 
 
 #### Satisfactory:
@@ -73,7 +72,7 @@ These items will be evaluated using the rubrics below.
 * There is evidence of code review - for example, pull requests that have comments on them
 * There is a correspondence between commit messages and the technical tasks that they are associated with; there are few (if any) commits with meaningless commits messages like `.` or `Add files via upload`.
 * Each team member has made at least 4 commits over the lifespan of the project
-* The team meets regularly with the TA mentor.  All or most members attend all meetings.  Members who are absent from a TA Meeting send an excuse in advance.
+* The team meets regularly with the TA mentor.  All or most members attend all meetings. Members who are absent from a TA Meeting send an excuse in advance.
 * Progress reports and other weekly reports and surveys are submitted in a timely fashion, not filled in later.
 * TA Meetings include demos or other evidence of progress.
 
