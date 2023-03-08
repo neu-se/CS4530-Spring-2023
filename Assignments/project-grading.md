@@ -28,8 +28,8 @@ In cases where team members do not equally contribute to the project, we may ass
   * 10% Additional delivered features
   * 10% Test suite of your features.
 * Reports (20%)
-      * 10% Final Report
-      * 10% Poster and Demo
+  * 10% Final Report
+  * 10% Poster and Demo
 
 This adds up to 100%; this sum is worth 40% of the course grade.
 
