@@ -6,16 +6,16 @@ parent: Assignments
 nav_order: 7
 ---
 # Grading
-Each project will be graded by the team's assigned TA mentor and the instructor. For most of the submission components below, we provide two benchmark rubrics: one for a submission that is satisfactory (full marks), and one that would be meeting our minimum expectations (a pass). Rubric for remaining components will be provided by individual instructors. In practice, when grading projects we will usually assign numeric grades and provide partial credit, using these rubrics as guidelines for those two extremes.
+Each project will be graded by the team's assigned TA mentor and the instructor. For most of the submission components below, we provide two benchmark rubrics: one for a submission that is satisfactory (full marks), and one that would be meeting our minimum expectations (a pass). In practice, when grading projects we will usually assign numeric grades and provide partial credit, using these rubrics as guidelines for those two extremes. Rubric for remaining components will be provided by individual instructors. 
 
 ### Adjustments in project scope
-We are hopeful that all teams will deliver (all essential and development) features proposed in the revised project plan. However, it is possible that there might be some minor deviations from the origional plan - in the five-week implementation period, there are sure to be some teams that encounter unexpected technical hurdles. As described in greater detail in the rubrics below, teams that have regular communication with their TA regarding their project status may have the opportunity to request variances to their project scope. 
+We are hopeful that all teams will deliver (all essential and development) features proposed in their revised project plans. However, it is possible that there might be some minor deviations from the origional plan - in the five-week implementation period, there are sure to be some teams that encounter unexpected technical hurdles. As described in greater detail in the rubrics below, teams that have regular communication with their TA regarding their project status may have the opportunity to request variances to their project scope. 
 
 In cases where team members do not equally contribute to the project, we may assign different grades to different individuals, up to an extreme of deducting 50% of the marks from a student. We will evaluate each individual's contribution on the basis of a variety of factors, including progress reports at weekly meetings, through inspecting version control history, through each student's self-reflection, and through each team's (or student's) peer evaluations during and/or at the end of the project. We will make regular efforts to collect and distribute this feedback throughout the project. Our ultimate goal is for all students to participate and receive full marks.
 
 ## Summary of grading 
 
-(from ({{ site.baseurl }}{% link Assignments/project-overview.md %}))
+From [Project Overview](({{ site.baseurl }}{% link Assignments/project-overview.md %}))
 
 * Planning (20%)
   * This includes the Preliminary Project Plan and the Revised Project Plan.
@@ -41,12 +41,12 @@ We will grade each of these using the following rubric:
 
 #### Satisfactory:
 * Implemented feature satisfies the conditions of satisfaction as proposed by the team and as agreed to by the course staff. If technical difficulties resulted in features being dropped, the project may still earn full marks on "delivered features," but these difficulties must have been documented with the course staff as you encountered them during development.
-* Implemented feature is deployed to a publicly-accessible URL, using Netlify and Heroku for hosting. Detailed instructions for deployement will be supplied later.
+* Implemented feature is deployed to a publicly-accessible URL, using Netlify and Heroku for hosting (or as per deployement instructions provided).
 * Implemented feature contains no ESLint warnings or errors; does not include any eslint-disable or ts-ignore flags
 
 #### Meets minimum requirements:
 * Implemented feature largely satisfies acceptance criteria as proposed by the team, but may not meet the course staff’s interpretation of those criteria.
-* Implemented feature is deployed to a publicly-accessible URL, using Netlify and Heroku for hosting. Detailed instructions for deployement will be supplied later.
+* Implemented feature is deployed to a publicly-accessible URL, uusing Netlify and Heroku for hosting (or as per deployement instructions provided).
 * The implementation may have some obvious flaws, but largely works without crashing.
 * Implemented feature does not include any eslint-disable or ts-ignore flag
 
@@ -167,6 +167,3 @@ Reflect on your team dynamic: Provide a frank (and ideally, blameless) postmorte
 * Is at least 2 paragraphs long;
 * Includes at least 1 paragraph reflecting on your own performance as a team member on this project, including what you would have done differently, given what you know now;
 * Includes at least 1 paragraph reflecting on your overall team dynamic, including strengths and weaknesses. Reflect on how you might have organized your team differently given what you know now.
-
-### Change Log
-* None.
