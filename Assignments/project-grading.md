@@ -69,7 +69,7 @@ These items will be evaluated using the rubrics below.
 
 #### Satisfactory:
 * There is a clear development history visible from the git repository: features were delivered incrementally, and not in a single (or several) commits at the end of the project
-* There is evidence of code review - for example, pull requests that have comments on them
+* There is evidence of code review - for example, pull requests that have comments on them. Teams are expected to merge their developvemeent branches to main only after code review. 
 * There is a correspondence between commit messages and the technical tasks that they are associated with; there are few (if any) commits with meaningless commits messages like `.` or `Add files via upload`.
 * Each team member has made at least 4 commits over the lifespan of the project
 * The team meets regularly with the TA mentor.  All or most members attend all meetings. Members who are absent from a TA Meeting send an excuse in advance.
