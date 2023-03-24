@@ -25,7 +25,7 @@ Select projects from Fall 2022 are hosted [in our project showcase](https://neu-
 | 02/07/23| Project Kick-off Meeting | Schedule a meeting with your Mentor TA during this week |
 | 02/15/23 | [Preliminary Project Plan]({{ site.baseurl }}{% link Assignments/project-plan.md %}) | Propose a new feature for Covey.Town that can be planned and implemented within 7 weeks |
 | 03/01/23 | [Revised Project Plan]({{ site.baseurl }}{% link Assignments/revised-project-plan.md %}) | Refine the scope of your feature based on staff feedback, define detailed requirements and project acceptance criteria. |
-| 04/12/23 | Project Delivery - Implementation and Documentation | Deliver your new feature, including design documentation and tests |
+| 04/12/23 | [Project Delivery - Implementation and Documentation]({{ site.baseurl }}{% link Assignments/project-deliverable.md %}) | Deliver your new feature, including design documentation and tests |
 
 ### Summary of Project Grading
 Your overall project grade (which will account for 40% of your final grade in this course) will be the weighted average of each of the deliverables.
