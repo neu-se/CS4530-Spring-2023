@@ -15,7 +15,7 @@ In cases where team members do not equally contribute to the project, we may ass
 
 ## Summary of grading 
 
-From [Project Overview](({{ site.baseurl }}{% link Assignments/project-overview.md %}))
+From [Project Overview]({{ site.baseurl }}{% link Assignments/project-overview.md %})
 
 * Planning (20%)
   * This includes the Preliminary Project Plan and the Revised Project Plan.
