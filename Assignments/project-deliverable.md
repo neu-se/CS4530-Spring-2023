@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project Final Deliverable
-permalink: /Assignments/project-deliverable
+permalink: /assignments/project-deliverable
 parent: Assignments
 nav_order: 6
 ---
