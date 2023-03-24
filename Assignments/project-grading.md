@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Final Project Grading
-permalink: /Assignments/project-grading
+permalink: /assignments/project-grading
 parent: Assignments
 nav_order: 7
 ---
