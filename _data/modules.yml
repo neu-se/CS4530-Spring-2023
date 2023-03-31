@@ -126,3 +126,5 @@ teamMeetings:
   name: Team Meetings
 midtermReview:
   name: Midterm Review
+noClass:
+  name: No Class
