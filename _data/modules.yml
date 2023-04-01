@@ -61,6 +61,7 @@
   name: Work on Project
 11b:
   name: Open Source
+  page: /modules/17-open-source
 12a:
   name: Work on Project
 12b:
@@ -100,6 +101,7 @@ tp3:
 tp4:
   name: Project Final Deliverable
   type: deadline
+  page: /assignments/project-deliverable
 veteransday:
   name: Veteran's Day (No class)
   type: holiday
@@ -125,3 +127,5 @@ teamMeetings:
   name: Team Meetings
 midtermReview:
   name: Midterm Review
+noClass:
+  name: No Class
