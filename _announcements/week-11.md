@@ -7,4 +7,4 @@ The [final project deliverables](https://neu-se.github.io/CS4530-Spring-2023/ass
 
 We have also provided a [tutorial](https://neu-se.github.io/CS4530-Spring-2023/tutorials/) on course website with details about how to setup your continuous integration and continuous deployment pipeline for the project.
 
-Each instructor will also provide detailed list of expectations for the final demos. Those may be viewed on piazza in next few weeks.
+Each instructor will also provide detailed list of [expectations for the final demos](https://northeastern.instructure.com/courses/133054/assignments/1783881). Those can be viewed on piazza.
