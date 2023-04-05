@@ -1,0 +1,683 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <link rel="stylesheet" href="/CS4530-Spring-2023/assets/css/just-the-docs-default.css">
+
+  
+
+  
+    <script src="/CS4530-Spring-2023/assets/js/vendor/lunr.min.js"></script>
+  
+
+  
+
+  <script src="/CS4530-Spring-2023/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Individual Project 2 | CS4530, Spring 2023</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Individual Project 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Northeastern University CS 4530 “Fundamentals of Software Engineering”, Spring 2023. Professors Adeel Bhutta, Jan Vitek and Mitch Wand." />
+<meta property="og:description" content="Northeastern University CS 4530 “Fundamentals of Software Engineering”, Spring 2023. Professors Adeel Bhutta, Jan Vitek and Mitch Wand." />
+<link rel="canonical" href="https://neu-se.github.io/CS4530-Spring-2023/assignments/ip2" />
+<meta property="og:url" content="https://neu-se.github.io/CS4530-Spring-2023/assignments/ip2" />
+<meta property="og:site_name" content="CS4530, Spring 2023" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Individual Project 2" />
+<script type="application/ld+json">
+{"headline":"Individual Project 2","dateModified":"2023-04-05T09:42:10+00:00","description":"Northeastern University CS 4530 “Fundamentals of Software Engineering”, Spring 2023. Professors Adeel Bhutta, Jan Vitek and Mitch Wand.","url":"https://neu-se.github.io/CS4530-Spring-2023/assignments/ip2","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+</head>
+
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+    <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  
+  
+    <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md -->
+<symbol id="svg-copy" viewBox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewBox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+  </svg>
+</symbol>
+
+  
+</svg>
+
+  <div class="side-bar">
+  <div class="site-header">
+    <a href="/CS4530-Spring-2023/" class="site-title lh-tight">
+  CS4530, Spring 2023
+
+</a>
+    <a href="#" id="menu-button" class="site-button">
+      <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+    </a>
+  </div>
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+    
+    
+      <ul class="nav-list"><li class="nav-list-item"><a href="#" class="nav-list-expander" aria-label="toggle links in Calendar category">
+            <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
+          </a><a href="/CS4530-Spring-2023/calendar/" class="nav-list-link">Calendar</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Spring-2023/calendar/s1" class="nav-list-link">Section 1 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/calendar/s2" class="nav-list-link">Section 2 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/calendar/s3" class="nav-list-link">Section 3 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/calendar/s4" class="nav-list-link">Section 4 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/calendar/s5" class="nav-list-link">Section 5 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/calendar/s6" class="nav-list-link">Section 6 - Calendar</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/calendar/s7" class="nav-list-link">Section 7 - Calendar</a></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander" aria-label="toggle links in Modules category">
+            <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
+          </a><a href="/CS4530-Spring-2023/modules/" class="nav-list-link">Modules</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/1-requirements-testing" class="nav-list-link">1 - Orientation & Requirements</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/2-requirements-to-code" class="nav-list-link">2 - From Requirements to Code</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/3-code-level-design-principles" class="nav-list-link">3 - Code-Level Design Principles</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/4-interaction-level-design-patterns" class="nav-list-link">4 - Interaction-Level Design Patterns</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/5-concurrency-patterns-in-typescript" class="nav-list-link">5 - Concurrency Patterns in Typescript</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/6-software-process" class="nav-list-link">6 - Software Process</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/7-react" class="nav-list-link">7 - React</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/8-patterns-of-react" class="nav-list-link">8 - Patterns of React</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/9-distributed-systems-1" class="nav-list-link">9 - Distributed Systems (Part 1)</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/10-distributed-systems-2" class="nav-list-link">10 - Distributed Systems (Part 2)</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/11-good-tests" class="nav-list-link">11 - Test Adequacy</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/12-larger-tests" class="nav-list-link">12 - Larger Tests</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/13-cloud-infrastructure" class="nav-list-link">13 - Cloud Infrastructure</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/14-continuous-development" class="nav-list-link">14 - Continuous Development</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/15-security" class="nav-list-link">15 - Security</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/16-technical-debt" class="nav-list-link">16 - Technical Debt</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/17-open-source" class="nav-list-link">17 - Open Source</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/modules/18-equitable-software" class="nav-list-link">18 - Ethics</a></li></ul></li><li class="nav-list-item active"><a href="#" class="nav-list-expander" aria-label="toggle links in Assignments category">
+            <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
+          </a><a href="/CS4530-Spring-2023/assignments/" class="nav-list-link">Assignments</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Spring-2023/assignments/ip1" class="nav-list-link">Individual Project 1</a></li><li class="nav-list-item  active"><a href="/CS4530-Spring-2023/assignments/ip2" class="nav-list-link active">Individual Project 2</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/assignments/project-overview" class="nav-list-link">Project Overview</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/assignments/project-plan" class="nav-list-link">Preliminary Project Plan</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/assignments/revised-project-plan" class="nav-list-link">Revised Project Plan</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/assignments/project-deliverable" class="nav-list-link">Project Final Deliverable</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/assignments/project-grading" class="nav-list-link">Final Project Grading</a></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander" aria-label="toggle links in Tutorials category">
+            <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
+          </a><a href="/CS4530-Spring-2023/tutorials/" class="nav-list-link">Tutorials</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Spring-2023/tutorials/week1-getting-started" class="nav-list-link">Installing a Development Environment</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/tutorials/week1-typescript-basics" class="nav-list-link">Typescript Basics</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/tutorials/week1-user-stories" class="nav-list-link">User Stories and Conditions of Satisfaction</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/tutorials/week1-unit-testing" class="nav-list-link">Unit Testing with Jest</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/tutorials/week4-react-basics" class="nav-list-link">React Tutorial</a></li><li class="nav-list-item "><a href="/CS4530-Spring-2023/tutorials/continuous-development" class="nav-list-link">CI/CD for Covey.Town</a></li></ul></li><li class="nav-list-item"><a href="/CS4530-Spring-2023/textbooks/" class="nav-list-link">Textbooks</a></li><li class="nav-list-item"><a href="/CS4530-Spring-2023/staff/" class="nav-list-link">Staff</a></li><li class="nav-list-item"><a href="/CS4530-Spring-2023/resources/" class="nav-list-link">Other Resources</a></li><li class="nav-list-item"><a href="#" class="nav-list-expander" aria-label="toggle links in Policies category">
+            <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
+          </a><a href="/CS4530-Spring-2023/policies/" class="nav-list-link">Policies</a><ul class="nav-list"><li class="nav-list-item "><a href="/CS4530-Spring-2023/policies/style/" class="nav-list-link">Code Style</a></li></ul></li></ul>
+    
+  </nav>
+
+  
+  
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  
+</div>
+
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+  
+    
+
+<div class="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search CS4530, Spring 2023" aria-label="Search CS4530, Spring 2023" autocomplete="off">
+    <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+  
+  
+  
+</div>
+
+    <div id="main-content-wrap" class="main-content-wrap">
+      
+  
+    <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+      <ol class="breadcrumb-nav-list">
+        
+          <li class="breadcrumb-nav-list-item"><a href="/CS4530-Spring-2023/assignments/">Assignments</a></li>
+        
+        <li class="breadcrumb-nav-list-item"><span>Individual Project 2</span></li>
+      </ol>
+    </nav>
+  
+
+
+      <div id="main-content" class="main-content" role="main">
+        
+          <h2 class="fs-6" id="individual-project-2">
+  
+  
+    <a href="#individual-project-2" class="anchor-heading" aria-labelledby="individual-project-2"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 
+    
+    Individual Project 2
+    
+    <strong class="label label-red">Due Wednesday February 22, 11:00am ET</strong>
+
+  
+  
+</h2>
+    
+
+
+<p>Welcome back! We were pleased to see your thorough implementation of the new PosterSessionArea in the townService of Covey.Town.
+At this point, you’ve implemented the backend of PosterSessionArea, and the REST/socket-io endpoints to process API calls from clients (whose calls we’re now going to add).</p>
+
+<p>While you have been working on these backend features, our UX designer Calin has finished the design of the PosterSessionArea feature, and we’re now ready to give you the rest of the feature.</p>
+
+<p>In this (final) deliverable for the PosterSessionArea feature, you will create the following components within the frontend application:</p>
+<ul>
+  <li>Hooks in the <code class="language-plaintext highlighter-rouge">TownController</code> to interface between the townService and the front end.</li>
+  <li>A <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code> and that will maintain data structures and dispatch events to the UI in response to updates from the <code class="language-plaintext highlighter-rouge">TownController</code></li>
+  <li>A React component for the <code class="language-plaintext highlighter-rouge">PosterViewer</code> that works with those hooks and controllers, to allow players to create/display/interact with poster session areas.</li>
+</ul>
+
+<p>When you complete this deliverable, you should have a fully-functioning implementation of the PosterSessionArea feature, and a better understanding of the covey.town architecture.</p>
+
+<p>This sequence diagram shows the interaction between the PosterSessionArea high level components to create a new poster session area and synchronize poster star values across multiple frontends (updated by user star/unstar).</p>
+
+<p><a href="https://mermaid.live/edit#pako:eNqlVV1v2jAU_SuWX0ol2gVCqxFNlSAd0h66VoXtYeLFTS5gzbEz24Gxqv9913ECDaEf0yoeavue43vPPTd-pIlKgUbUwK8CZALXnC01y-aS4B8rrJJF9gDar3OmLU94zqQld9PRDWGGjNagtyeG3CljQX_nsAFNjoXH7egpGMOVHGlgsZJWKyGOXTVrQGdqI_fRpDPRuACZnraB4xLoAFPQa54A6YxZ8vN48O3EBcdMcIm31KykM-VZLviCgwN5mFQWiMJ8ShUiMiKFwUWRC8VSQxjJy_KIVSTlJhds2yUbbld4YrkV4Fkc9uzqahZHePFWJiRBHSy0pOlI2PjNLxlbQpfgeuZoqiJYYvkagSWh35rFSDx-i5h07j9PZyRhQlRU4_isymhaJAlGkh0f7vtiqxN_kMKR2_fyuBSey8_lQukMFRKCOFlAG6IWrqBKsl1bGjAkxAYkzGLiTtTSCj60zNmnzLFhGtNhDwK-5SnmdKBcXLbUmpaClWDo0Qib6JA3OBXi_XBE7vTJlT5ExCsmly9lc_rpQX-48uWXrIfRh1eVrvF33cOZRpOijJiU2tRu43JJ7AoamjL08mualsZvaHo7-T9N9zZwTJdnQ6KSpNCeU6IFtmQFuhoGrGLf-3rUF_UQVnUZ4r9GzjPGMlc1W7hBcwvtqlaaaMjUmok6pp2Nl-66KAHPkYXcrVpqozN8_f7iZuOd-yDjtjVhHtIw2fi4U0vW0_fo34xsivy1KQ_h-JPEfQP2Jqi_cG1xnWUMy-BQZceBbcGOgdiN34k5nsKrutaQ28k_KTF7T-TxEW7GNOe0bBae-4EjLyrr49_SFqWkXZqBzhhP8UV9dNtziqJmMKcR_pvCghXCzulcPmGoe12nCKeR1QV0qU-7eoBptGDC4C6k3Cp941_p8rHuUnyvfiiV1UBc0uiR_qZRrzc4D4e9MBiGg14Q9MMu3dIoOA97_YvLfhCEYdgb9PtB-NSlf0qG4Hw4-DgcDMIw6PcuBheDp7_CtbFo"><img src="https://mermaid.ink/img/pako:eNqlVV1v2jAU_SuWX0ol2gVCqxFNlSAd0h66VoXtYeLFTS5gzbEz24Gxqv9913ECDaEf0yoeavue43vPPTd-pIlKgUbUwK8CZALXnC01y-aS4B8rrJJF9gDar3OmLU94zqQld9PRDWGGjNagtyeG3CljQX_nsAFNjoXH7egpGMOVHGlgsZJWKyGOXTVrQGdqI_fRpDPRuACZnraB4xLoAFPQa54A6YxZ8vN48O3EBcdMcIm31KykM-VZLviCgwN5mFQWiMJ8ShUiMiKFwUWRC8VSQxjJy_KIVSTlJhds2yUbbld4YrkV4Fkc9uzqahZHePFWJiRBHSy0pOlI2PjNLxlbQpfgeuZoqiJYYvkagSWh35rFSDx-i5h07j9PZyRhQlRU4_isymhaJAlGkh0f7vtiqxN_kMKR2_fyuBSey8_lQukMFRKCOFlAG6IWrqBKsl1bGjAkxAYkzGLiTtTSCj60zNmnzLFhGtNhDwK-5SnmdKBcXLbUmpaClWDo0Qib6JA3OBXi_XBE7vTJlT5ExCsmly9lc_rpQX-48uWXrIfRh1eVrvF33cOZRpOijJiU2tRu43JJ7AoamjL08mualsZvaHo7-T9N9zZwTJdnQ6KSpNCeU6IFtmQFuhoGrGLf-3rUF_UQVnUZ4r9GzjPGMlc1W7hBcwvtqlaaaMjUmok6pp2Nl-66KAHPkYXcrVpqozN8_f7iZuOd-yDjtjVhHtIw2fi4U0vW0_fo34xsivy1KQ_h-JPEfQP2Jqi_cG1xnWUMy-BQZceBbcGOgdiN34k5nsKrutaQ28k_KTF7T-TxEW7GNOe0bBae-4EjLyrr49_SFqWkXZqBzhhP8UV9dNtziqJmMKcR_pvCghXCzulcPmGoe12nCKeR1QV0qU-7eoBptGDC4C6k3Cp941_p8rHuUnyvfiiV1UBc0uiR_qZRrzc4D4e9MBiGg14Q9MMu3dIoOA97_YvLfhCEYdgb9PtB-NSlf0qG4Hw4-DgcDMIw6PcuBheDp7_CtbFo?type=png" alt="" /></a></p>
+
+<p>The sequence beings when a user selects a poster to upload to a <code class="language-plaintext highlighter-rouge">PosterSessionArea</code> (with an associated title), entering it into the <code class="language-plaintext highlighter-rouge">PosterViewer</code>:</p>
+
+<ol>
+  <li>The <code class="language-plaintext highlighter-rouge">PosterSessionAreaPoster</code> asks the <code class="language-plaintext highlighter-rouge">TownController</code> to create a new poster session area with the specified poster image and title</li>
+  <li>The <code class="language-plaintext highlighter-rouge">TownController</code> asks the <code class="language-plaintext highlighter-rouge">townService</code> to create the new poster session area with the specified poster image and title, making a REST call</li>
+  <li>Assuming that the request was valid, the <code class="language-plaintext highlighter-rouge">townService</code> returns success</li>
+  <li>Assuming that the request was valid, the <code class="language-plaintext highlighter-rouge">TownController</code> returns success</li>
+  <li>The <code class="language-plaintext highlighter-rouge">townService</code> broadcasts an <code class="language-plaintext highlighter-rouge">interactableUpdate</code> message with the new poster image and title (happening in parallel with 9)</li>
+  <li>The <code class="language-plaintext highlighter-rouge">TownController</code> receives the <code class="language-plaintext highlighter-rouge">interactableUpdate</code>, finds the correct <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code> and pushes an <code class="language-plaintext highlighter-rouge">updateModel</code> event to it</li>
+  <li>The <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code> updates its model, and emits <code class="language-plaintext highlighter-rouge">posterImageContentsChange</code> and <code class="language-plaintext highlighter-rouge">posterTitleChange</code> events to its listeners</li>
+  <li>The <code class="language-plaintext highlighter-rouge">PosterViewer</code> receives the update, re-renders, and now displays the poster and the associated title</li>
+  <li>The <code class="language-plaintext highlighter-rouge">townService</code> sends the same <code class="language-plaintext highlighter-rouge">interactableUpdate</code> to Calin’s frontend, and (6-8) happen in Calin’s frontend</li>
+  <li>When a poster is starred or unstarred, Avery’s <code class="language-plaintext highlighter-rouge">PosterViewer</code> updates the stars on the <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code></li>
+  <li>In response to the update from the PosterSessionAreaPoster, the PosterSessionAreaController asks the TownController to emit an update to the townService</li>
+  <li>The <code class="language-plaintext highlighter-rouge">TownController</code> emits the <code class="language-plaintext highlighter-rouge">interactableUpdate</code> event, notifying the backend of the new number of stars</li>
+  <li>The <code class="language-plaintext highlighter-rouge">townService</code> relays that <code class="language-plaintext highlighter-rouge">interactableUpdate</code> to other clients, which will ensure that their displayed number of stars is synchronized</li>
+  <li>In parallel to 10-13, Calin’s client emits <code class="language-plaintext highlighter-rouge">interactableUpdate</code> updates with their stars</li>
+  <li>The <code class="language-plaintext highlighter-rouge">townService</code> forwards this update to Avery’s frontend <code class="language-plaintext highlighter-rouge">TownController</code></li>
+  <li>Avery’s <code class="language-plaintext highlighter-rouge">TownController</code> finds the <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code> responsible for that poster session area, and calls its <code class="language-plaintext highlighter-rouge">updateModel</code> method, updating its view of the stars</li>
+  <li>The <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code> emits a <code class="language-plaintext highlighter-rouge">posterStarChange</code> event to its listeners.</li>
+</ol>
+<h2 id="objectives-of-this-assignment">
+  
+  
+    <a href="#objectives-of-this-assignment" class="anchor-heading" aria-labelledby="objectives-of-this-assignment"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Objectives of this assignment
+  
+  
+</h2>
+    
+<p>The objectives of this assignment are to:</p>
+<ul>
+  <li>Write new TypeScript code that uses asynchronous operations</li>
+  <li>Write test cases that utilize mocks and spies</li>
+  <li>Write React components and hooks that make use of state</li>
+</ul>
+
+<!-- Changelog: -->
+<h2 id="getting-started-with-this-assignment">
+  
+  
+    <a href="#getting-started-with-this-assignment" class="anchor-heading" aria-labelledby="getting-started-with-this-assignment"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Getting started with this assignment
+  
+  
+</h2>
+    
+
+<p>Start by downloading the <a href="/CS4530-Spring-2023/Assignments/ip2/ip2-handout.zip">starter code</a>. Extract the archive and run <code class="language-plaintext highlighter-rouge">npm install</code> to fetch the dependencies.
+Follow the instructions in the  handout’s Readme to configure and set up the backend and frontend.</p>
+<h3 id="installation-notes">
+  
+  
+    <a href="#installation-notes" class="anchor-heading" aria-labelledby="installation-notes"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Installation notes
+  
+  
+</h3>
+    
+
+<p><strong>Configuring Jest and VSCode</strong>: If you would like to use the built-in Jest test runner for VSCode (where it shows the tests and their status in the sidebar), the easiest way to accomplish this for this project is to open <em>just</em> the “frontend” directory or just the “townService” directory in VSCode - not the top-level “ip2-handout” directory. If you have a quick-fix to make it work with the whole project at once, please feel free to share on Piazza and we will incorportate that here.</p>
+
+<p><strong>NPM install failures</strong>: The libraries used for React require some native binaries to be installed – code written and compiled for your computer (not JavaScript). If you run into issues with <code class="language-plaintext highlighter-rouge">npm install</code> not succeeding, please try installing the following libraries using either <a href="https://brew.sh">Homebrew (if on Mac)</a>, apt-get, or your favorite other package manager: <code class="language-plaintext highlighter-rouge">pixman</code>, <code class="language-plaintext highlighter-rouge">cairo</code>, <code class="language-plaintext highlighter-rouge">pkgconfig</code> and <code class="language-plaintext highlighter-rouge">pango</code>. For example, run <code class="language-plaintext highlighter-rouge">brew install pixman cairo pkgconfig pango</code>. If you are on a newer Mac with an M1 or M2 chip, you may need to use <code class="language-plaintext highlighter-rouge">arch -arm64 brew install pixman cairo pango</code>. On Windows: Students have reported seeing the failure <code class="language-plaintext highlighter-rouge">error /bin/bash: node: command not found</code> upon <code class="language-plaintext highlighter-rouge">npm install</code> in the <code class="language-plaintext highlighter-rouge">frontend</code> directory. If you encounter this error, please try to delete the <code class="language-plaintext highlighter-rouge">node_modules</code> directory and re-run <code class="language-plaintext highlighter-rouge">npm install</code> in the <code class="language-plaintext highlighter-rouge">frontend</code> directory from a bash shell instead of a windows command prompt.</p>
+<h2 id="grading">
+  
+  
+    <a href="#grading" class="anchor-heading" aria-labelledby="grading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Grading
+  
+  
+</h2>
+    
+<p>This submission will be scored out of 200 points, 180 of which will be automatically awarded by the grading script, with the remaining 20 manually awarded by the course staff.</p>
+
+<p>Your code will automatically be evaluated for linter errors and warnings. Submissions that have <em>any</em> linter errors will automatically receive a grade of 0. <strong>Do not wait to run the linter until the last minute</strong>. To check for linter errors, run the command <code class="language-plaintext highlighter-rouge">npm run lint</code> from the terminal. The handout contains the same eslint configuration that is used by our grading script.</p>
+
+<p>Your code will be automatically evaluated for functional correctness by a test suite that expands on the core tests that are distributed in the handout. 
+Your tests will be automatically evaluated for functional correctness by a process that will inject bugs into our reference solution: to receive full marks your tests must detect a minimum number of injected bugs. 
+You will <strong>not</strong> receive detailed feedback on which injected bugs you do or do not find.</p>
+
+<p>The autograding script will impose a strict rate limit of 10 submissions per 24 hours.
+Submissions that fail to grade will not count against the quota.
+This limit exists to encourage you to start early on this assignment: students generally report that assignments like this take between 10-36 hours.
+If you start early, you will be able to take full advantage of the resources that we provide to help you succeed: office hours, discussion on Piazza — and the ability to have a greater total number of submission attempts.</p>
+
+<p>Your code will be manually evaluated for conformance to our course <a href="/CS4530-Spring-2023/policies/style/">style guide</a>. This manual evaluation will account for 10% of your total grade on this assignment. We will manually evaluate your code for style on the following rubric:</p>
+
+<p>To receive all 20 points:</p>
+<ul>
+  <li>All new names (e.g. for local variables, methods, and properties) follow the naming conventions defined in our style guide</li>
+  <li>There are no unused local variables</li>
+  <li>All public properties and methods (other than getters, setters, and constructors) are documented with JSDoc-style comments that describes what the property/method does, as defined in our style guide</li>
+  <li>The code and tests that you write generally follows the design principles discussed in week one. In particular, your design does not have duplicated code that could have been refactored into a shared method.</li>
+</ul>
+
+<p>We will review your code and note each violation of this rubric. We will deduct four points for each violation, up to a maximum of deducting all 20 style points.</p>
+<h2 id="implementation-tasks">
+  
+  
+    <a href="#implementation-tasks" class="anchor-heading" aria-labelledby="implementation-tasks"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Implementation Tasks
+  
+  
+</h2>
+    
+<p>This deliverable has 3 parts; each part will be graded on its own rubric. You should complete the assignment one part at a time, in the order presented here:</p>
+<h3 id="task-1-implement-and-test-frontend-controllers-65-points-total">
+  
+  
+    <a href="#task-1-implement-and-test-frontend-controllers-65-points-total" class="anchor-heading" aria-labelledby="task-1-implement-and-test-frontend-controllers-65-points-total"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Task 1: Implement and Test Frontend Controllers (65 points total)
+  
+  
+</h3>
+    
+<p>Similar to the organization of the backend townService, the frontend application also has controllers that maintain the state of each interactable.</p>
+
+<p>The relevant files for this task are located in the directory <code class="language-plaintext highlighter-rouge">frontend/src/classes/</code>.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">TownController</code> interacts with the <code class="language-plaintext highlighter-rouge">townService</code>, receiving <code class="language-plaintext highlighter-rouge">ServerToClientEvents</code> from the backend and emitting <code class="language-plaintext highlighter-rouge">ClientToServerEvents</code> to the backend.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">TownController</code>, in turn, emits <code class="language-plaintext highlighter-rouge">TownEvents</code> to components in the frontend. These events are the events that the GUI components will observe. Each PosterSessionArea is represented by a <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code>, which emits <code class="language-plaintext highlighter-rouge">PosterSessionAreaEvents</code>. GUI components that display details about each poster sesssion area will subscribe to these events so that they can remain up-to-date with the current state of the interactable.</p>
+
+<p>Your next task is to implement the <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code>.
+Along with this, you’ll also need to implement the event handler for <code class="language-plaintext highlighter-rouge">TownController</code> to receive <code class="language-plaintext highlighter-rouge">interactableUpdate</code> messages from the townService, and the hooks for getting the poster image contents and incrementing the number of stars on a given poster session area (<code class="language-plaintext highlighter-rouge">getPosterSessionAreaImageContents</code> and <code class="language-plaintext highlighter-rouge">incrementPosterSessionAreaStars</code> respectively).
+Each of these classes and functions are stubbed out in the handout.</p>
+
+<p>Our handout does <em>not</em> include all of the tests in <code class="language-plaintext highlighter-rouge">PosterSessionAreaController.test.ts</code>. To receive full marks on task 2, you will <em>also</em> need enhance these test suites to check all of the behaviors of the methods that you are implementing.
+Testing the behavior of the <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code> will require you to use <em>mocks</em>. 
+The <code class="language-plaintext highlighter-rouge">PosterSessionAreaController.test.ts</code> file in the handout contains all of the setup code that you will need to write tests to check that the correct listeners are invoked.
+The <code class="language-plaintext highlighter-rouge">mockListeners</code> object (in each test) are <em>mock</em> objects, which do not provide any implementation of the listener callbacks, but keep track of when they have been called.
+In this way, you can write an assertion that some listener method is called by asserting that the mock listener was called.</p>
+
+<p>To write an assertion that, for example, the <code class="language-plaintext highlighter-rouge">occupantsChange</code> listener is invoked in <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code>, you could use Jest’s <a href="https://jestjs.io/docs/expect#tohavebeencalled">toHaveBeenCalled()</a> matcher, as in:
+<code class="language-plaintext highlighter-rouge">expect(mockListeners.occupantsChange).toHaveBeenCalled()</code>. You might also find it useful to use the <a href="https://jestjs.io/docs/expect#tohavebeencalledwitharg1-arg2-">toHaveBeenCalledWith(args..)</a> matcher to check the arguments that are passed to the listener.
+To assert that a listener was <em>not</em> called, chain the <a href="https://jestjs.io/docs/expect#not"><code class="language-plaintext highlighter-rouge">not</code> matcher</a>, as in <code class="language-plaintext highlighter-rouge">expect(...).not.toHaveBeenCalled()</code>.</p>
+
+<p>We strongly suggest writing the tests before (or concurrent) with implementing the classes, so that you can use your own tests to help you develop your implementation.</p>
+
+<p>Note: you may find it useful to use the helper method <code class="language-plaintext highlighter-rouge">isPosterSessionArea</code> defined in <code class="language-plaintext highlighter-rouge">TypeUtils.ts</code></p>
+
+<p>To run the tests for this part, run the command <code class="language-plaintext highlighter-rouge">npm test TestName</code> in the <code class="language-plaintext highlighter-rouge">frontend</code> directory, where <code class="language-plaintext highlighter-rouge">TestName</code> is either <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code> or <code class="language-plaintext highlighter-rouge">TownController</code>.
+You don’t need to add any new tests in <code class="language-plaintext highlighter-rouge">TownController.test.ts</code>.</p>
+
+<details>
+  <summary>View the specification for these tasks</summary>
+
+  <p>PosterSessionAreaController</p>
+
+  <figure class="highlight">
+    <pre><code class="language-typescript" data-lang="typescript">  <span class="cm">/**
+   * Constructs a new PosterSessionAreaController, initialized with the state of the
+   * provided posterSessionAreaModel.
+   *
+   * @param posterSessionAreaModel The poster session area model that this controller should represent
+   */</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">posterSessionAreaModel</span><span class="p">:</span> <span class="nx">PosterSessionAreaModel</span><span class="p">)</span>
+
+  <span class="cm">/**
+   * The ID of the poster session area represented by this poster session area controller
+   * This property is read-only: once a PosterSessionAreaController is created, it will always be
+   * tied to the same poster session area ID.
+   */</span>
+  <span class="k">public</span> <span class="kd">get</span> <span class="nx">id</span><span class="p">():</span> <span class="kr">string</span> 
+
+  <span class="cm">/**
+   * The title of the poster assigned to this area, or undefined if there is not one.
+   */</span>
+  <span class="k">public</span> <span class="kd">get</span> <span class="nx">title</span><span class="p">():</span> <span class="kr">string</span> <span class="o">|</span> <span class="kc">undefined</span> 
+
+  <span class="cm">/**
+   * The poster title: changing this value will emit a 'posterTitleChange' events to listeners
+   * 
+   */</span>
+  <span class="k">public</span> <span class="kd">set</span> <span class="nx">title</span><span class="p">(</span><span class="nx">title</span><span class="p">:</span> <span class="kr">string</span> <span class="o">|</span> <span class="kc">undefined</span><span class="p">)</span>
+
+  <span class="cm">/**
+   * The image of the poster assigned to this area, or undefined if there is not one.
+   */</span>
+  <span class="k">public</span> <span class="kd">get</span> <span class="nx">imageContents</span><span class="p">():</span> <span class="kr">string</span> <span class="o">|</span> <span class="kc">undefined</span> 
+
+
+  <span class="cm">/**
+   * The image contents of the poster (string representing the contents of the poster file chosen).
+   * Changing this value will emit a 'posterImageContentsChange' event to listeners, and empty the list
+   * of players who starred the poster.
+   */</span>
+  <span class="k">public</span> <span class="kd">set</span> <span class="nx">imageContents</span><span class="p">(</span><span class="nx">imageContents</span><span class="p">:</span> <span class="kr">string</span> <span class="o">|</span> <span class="kc">undefined</span><span class="p">)</span> 
+
+  <span class="cm">/**
+   * The number of stars of the poster assigned to this area.
+   */</span>
+  <span class="k">public</span> <span class="kd">get</span> <span class="nx">stars</span><span class="p">():</span> <span class="kr">number</span>
+
+  <span class="cm">/**
+   * The number of stars of the poster assigned to this area.
+   *
+   * Changing this value will emit a ‘posterStarChange' event to listeners
+   */</span>
+  <span class="k">public</span> <span class="kd">set</span> <span class="nx">stars</span><span class="p">(</span><span class="nx">stars</span><span class="p">:</span> <span class="kr">number</span><span class="p">)</span>
+
+  <span class="cm">/**
+   * The list of IDs of the players who starred the poster (with its current image)
+   */</span> 
+  <span class="k">public</span> <span class="kd">get</span> <span class="nx">playersWhoStarred</span><span class="p">():</span> <span class="kr">string</span><span class="p">[]</span>
+
+  <span class="cm">/**
+   * Add the specified player ID to the list of players who starred this poster. 
+   */</span>
+  <span class="k">public</span> <span class="nx">addPlayerWhoStarred</span><span class="p">(</span><span class="nx">playerID</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span>
+
+  <span class="cm">/**
+   * @returns PosterSessionAreaModel that represents the current state of this PosterSessionAreaController
+   */</span>
+  <span class="k">public</span> <span class="nx">posterSessionAreaModel</span><span class="p">():</span> <span class="nx">PosterSessionAreaModel</span></code></pre>
+  </figure>
+
+  <p>TownController</p>
+
+  <figure class="highlight">
+    <pre><code class="language-typescript" data-lang="typescript">    <span class="cm">/**
+     * When an interactable's state changes, push that update into the relevant controller, which is assumed
+     * to be either a Viewing Area, a Poster Session Area, or a Conversation Area, and which is assumed to already
+     * be represented by a ViewingAreaController, PosterSessionAreaController or ConversationAreaController that this TownController has.
+     *
+     * If a conversation area transitions from empty to occupied (or occupied to empty), this handler will emit
+     * a conversationAreasChagned event to listeners of this TownController.
+     *
+     * If the update changes properties of the interactable, the interactable is also expected to emit its own
+     * events (@see ViewingAreaController and @see ConversationAreaController and @see PosterSessionAreaController)
+     */</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">_socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">interactableUpdate</span><span class="dl">'</span><span class="p">,</span> <span class="nx">interactable</span> <span class="o">=&gt;</span> <span class="p">{})</span>
+
+
+  <span class="cm">/**
+   * Get the image contents for a specified poster session area (specified via poster session area controller)
+   * @param posterSessionArea the poster session area controller
+   * @returns a promise wrapping the contents of the poster session area's image (i.e. the string)
+   */</span>
+  <span class="k">public</span> <span class="k">async</span> <span class="nx">getPosterSessionAreaImageContents</span><span class="p">(</span>
+    <span class="nx">posterSessionArea</span><span class="p">:</span> <span class="nx">PosterSessionAreaController</span><span class="p">,</span>
+  <span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="kr">string</span><span class="o">&gt;</span> 
+
+  <span class="cm">/**
+   * Increment the number of stars for a specified poster session area (specified via poster session area controller)
+   * @param posterSessionArea the poster session area controller
+   * @returns a promise wrapping the new number of stars the poster has
+   */</span>
+  <span class="k">public</span> <span class="k">async</span> <span class="nx">incrementPosterSessionAreaStars</span><span class="p">(</span>
+    <span class="nx">posterSessionArea</span><span class="p">:</span> <span class="nx">PosterSessionAreaController</span><span class="p">,</span>
+  <span class="p">)</span></code></pre>
+  </figure>
+
+</details>
+<h4 id="grading-for-task-1">
+  
+  
+    <a href="#grading-for-task-1" class="anchor-heading" aria-labelledby="grading-for-task-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Grading for Task 1:
+  
+  
+</h4>
+    
+<p>Point break down for each of the implementation tasks:</p>
+<ul>
+  <li>Implement PosterSessionAreaController: 30 points</li>
+  <li>Implement TownController.interactableUpdate and poster hooks: 10 points</li>
+</ul>
+
+<p>To receive marks for implementing each feature, your implementation must pass all of our tests for it.</p>
+
+<p>Point break down for each of the testing tasks:</p>
+<ul>
+  <li>Test PosterSessionAreaController title property: 7 points</li>
+  <li>Test PosterSessionAreaController imageContents property: 7 points</li>
+  <li>Test PosterSessionAreaController stars property: 7 points</li>
+  <li>Test PosterSessionAreaController toPosterSessionAreaModel: 4 points</li>
+</ul>
+
+<p>Partial marks are available for detecting some (but not all) faults. The number of faults detected may not directly correlate with the difficulty of writing the test: there are several faults that are nearly guaranteed to be detected together (writing a test that finds one of them is guaranteed to find both of them), which is why there are different cutoffs for partial and full marks for the tests.</p>
+<h3 id="task-2-implement-react-hooks-50-points">
+  
+  
+    <a href="#task-2-implement-react-hooks-50-points" class="anchor-heading" aria-labelledby="task-2-implement-react-hooks-50-points"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Task 2: Implement React Hooks (50 points)
+  
+  
+</h3>
+    
+<p>As discussed in Module 8, an effective pattern for building React applications is to use hooks within components to access global state. As part of the refactoring to implement the Interactable abstraction throughout Covey.Town, Avery also refactored the entire React-based frontend to use this pattern of hooks. Before implementing the final component that displays and synchronizes video playback in Viewing Areas, your next task will be to implement these hooks - some of which are related to the interactables, and some of which are related to Avery’s overall refactoring to use more hooks.</p>
+
+<p>Some of these hooks may require you to include <code class="language-plaintext highlighter-rouge">useEffect</code> and/or <code class="language-plaintext highlighter-rouge">useState</code> hooks within the hook that you are building. For each of the hooks, consider the events that they might need to listen to.
+The hooks you’ll be implementing are in <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code>.</p>
+
+<p>Be sure to follow the <a href="https://reactjs.org/docs/hooks-rules.html">rules of hooks</a> when implementing your hooks - these will be enforced by the linter, and also by the TAs when grading for style.</p>
+
+<details>
+  <summary>View the specification for these tasks</summary>
+
+  <p>PosterSessionAreaController</p>
+
+  <figure class="highlight">
+    <pre><code class="language-typescript" data-lang="typescript"><span class="cm">/**
+ * A hook that returns the number of stars for the poster session area with the given controller
+ */</span>
+<span class="k">export</span> <span class="kd">function</span> <span class="nx">useStars</span><span class="p">(</span><span class="nx">controller</span><span class="p">:</span> <span class="nx">PosterSessionAreaController</span><span class="p">):</span> <span class="kr">number</span>
+
+<span class="cm">/**
+ * A hook that returns the image contents for the poster session area with the given controller
+ */</span>
+<span class="k">export</span> <span class="kd">function</span> <span class="nx">useImageContents</span><span class="p">(</span><span class="nx">controller</span><span class="p">:</span> <span class="nx">PosterSessionAreaController</span><span class="p">):</span> <span class="kr">string</span> <span class="o">|</span> <span class="kc">undefined</span>
+
+<span class="cm">/**
+ * A hook that returns the title for the poster session area with the given controller
+ */</span>
+<span class="k">export</span> <span class="kd">function</span> <span class="nx">useTitle</span><span class="p">(</span><span class="nx">controller</span><span class="p">:</span> <span class="nx">PosterSessionAreaController</span><span class="p">)</span></code></pre>
+  </figure>
+
+</details>
+
+<p>Grading for Task 2:
+You do not need to write any tests for task 2. The handout contains all of the tests that our grading script will use.
+To run the tests, run <code class="language-plaintext highlighter-rouge">npm test PosterHooks</code> in the <code class="language-plaintext highlighter-rouge">frontend</code> directory.</p>
+
+<p>Point break down for each of the implementation tasks:</p>
+<ul>
+  <li>Implement PosterSessionAreaController.ts useStars: 20 points</li>
+  <li>Implement PosterSessionAreaController.ts useImageContents: 15 points</li>
+  <li>Implement PosterSessionAreaController.ts useTitle: 15 points</li>
+</ul>
+
+<p>To receive marks for implementing each feature, your implementation must pass all of our tests for it.</p>
+<h3 id="task-3-gui-components-for-poster-session-areas-images-65-points">
+  
+  
+    <a href="#task-3-gui-components-for-poster-session-areas-images-65-points" class="anchor-heading" aria-labelledby="task-3-gui-components-for-poster-session-areas-images-65-points"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Task 3: GUI Components for Poster Session Areas images (65 points)
+  
+  
+</h3>
+    
+<p>With the controllers implemented, the last task will be to implement the frontend GUI component to display posters in the PosterSessionAreas. Avery has implemented the skeleton for this component, which also includes a form to set the poster image for a poster session area if it hasn’t already been set.</p>
+
+<p>Your task is to implement the creation of the poster with the user-specified information in the <code class="language-plaintext highlighter-rouge">SelectPosterModal</code> component, and then implement the component <code class="language-plaintext highlighter-rouge">PosterImage</code>, which renders the poster session area’s poster image and synchronizes the number of stars with the <code class="language-plaintext highlighter-rouge">PosterSessionAreaController</code>. You will find that there is already a skeleton of this component created, which renders a an image component and number of stars inside of a <code class="language-plaintext highlighter-rouge">&lt;Modal&gt;</code>.</p>
+
+<p>To run the tests for this part, run the command <code class="language-plaintext highlighter-rouge">npm test PosterViewer</code> in the <code class="language-plaintext highlighter-rouge">frontend</code> directory.</p>
+
+<p>The specification for this component is provided in comments in the files <code class="language-plaintext highlighter-rouge">frontend/src/components/Town/interactables/PosterViewer.tsx</code> and <code class="language-plaintext highlighter-rouge">frontend/src/components/Town/interactables/SelectPosterModal.tsx</code>, and reproduced below:
+</p>
+<details>
+  <summary>View the specification for this component</summary>
+
+  <p>SelectPosterModal</p>
+
+  <figure class="highlight">
+    <pre><code class="language-typescript" data-lang="typescript"><span class="c1">// Create a poster given the title and image specified by the user in this selection.</span>
+  <span class="c1">// If one of these components of the poster is missing, or if the posterAreaController was not</span>
+  <span class="c1">// found, then don't create the poster.</span>
+  <span class="c1">// Toast some errors if the poster could not be created.</span>
+  <span class="kd">const</span> <span class="nx">createPoster</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// TODO</span>
+  <span class="p">},</span> <span class="p">[</span>
+    <span class="nx">title</span><span class="p">,</span>
+    <span class="nx">posterFileContents</span><span class="p">,</span>
+    <span class="nx">setTitle</span><span class="p">,</span>
+    <span class="nx">coveyTownController</span><span class="p">,</span>
+    <span class="nx">posterSessionAreController</span><span class="p">,</span>
+    <span class="nx">closeModal</span><span class="p">,</span>
+    <span class="nx">toast</span><span class="p">,</span>
+  <span class="p">]);</span></code></pre>
+  </figure>
+
+  <p>PosterImage</p>
+
+  <figure class="highlight">
+    <pre><code class="language-typescript" data-lang="typescript"><span class="cm">/**
+ * The PosterImage component does the following:
+ * -- renders the image of a PosterSessionArea (in a modal)
+ * -- displays the title of the PosterSessionArea as the header of the modal
+ * -- displays the number of stars on the poster
+ * Along with the number of stars, there is also a button to increment the number of stars on a poster (i.e.
+ * where a player can star a poster). Note that a player cannot star a poster more than once (this is tied to
+ * the poster itself, not the PosterSessionArea).
+ *
+ * @param props: A 'controller', which is the PosterSessionArea corresponding to the
+ *               current poster session area.
+ *             : A 'isOpen' flag, denoting whether or not the modal should open (it should open if the poster exists)
+ *             : A 'close' function, to be called when the modal is closed
+ */</span>
+<span class="k">export</span> <span class="kd">function</span> <span class="nx">PosterImage</span><span class="p">({</span>
+  <span class="nx">controller</span><span class="p">,</span>
+  <span class="nx">isOpen</span><span class="p">,</span>
+  <span class="nx">close</span><span class="p">,</span>
+<span class="p">}:</span> <span class="p">{</span>
+  <span class="nl">controller</span><span class="p">:</span> <span class="nx">PosterSessionAreaController</span><span class="p">;</span>
+  <span class="nl">isOpen</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">;</span>
+  <span class="nl">close</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">void</span><span class="p">;</span>
+<span class="p">}):</span> <span class="nx">JSX</span><span class="p">.</span><span class="nx">Element</span></code></pre>
+  </figure>
+
+</details>
+<h4 id="grading-for-task-3">
+  
+  
+    <a href="#grading-for-task-3" class="anchor-heading" aria-labelledby="grading-for-task-3"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Grading for Task 3:
+  
+  
+</h4>
+    
+<p>You do not need to write any tests for task 3. The handout contains all of the tests that our grading script will use.</p>
+
+<p>Point break down for each of the implementation tasks:</p>
+<ul>
+  <li>Implement <code class="language-plaintext highlighter-rouge">createPoster</code> in SelectPosterModal: 30 points</li>
+  <li>Implement PosterImage - sync the imageContents with the townController: 20 points</li>
+  <li>Implement PosterImage - increment stars should only be available once per player, per poster image (i.e. can’t star more than once): 15 points</li>
+</ul>
+
+<p>To receive marks for implementing each feature, your implementation must pass all of our tests for it.</p>
+<h2 id="submission-instructions">
+  
+  
+    <a href="#submission-instructions" class="anchor-heading" aria-labelledby="submission-instructions"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Submission Instructions
+  
+  
+</h2>
+    
+<p>Submit your assignment in GradeScope. The easiest way to get into GradeScope the first time is to first
+<a href="https://northeastern.instructure.com/courses/133054">sign into Canvas</a> and then click the link on our course for “GradeScope”. 
+You should then also have the option to create an account on GradeScope (if you don’t already have one) so that you can log in to GradeScope directly.
+Please contact the instructors immediately if you have difficulty accessing the course on GradeScope.</p>
+
+<p>Submit the following files:</p>
+<ul>
+  <li>frontend/src/classes/TownController.ts</li>
+  <li>frontend/src/classes/PosterSessionAreaController.ts</li>
+  <li>frontend/src/classes/PosterSessionAreaController.test.ts</li>
+  <li>frontend/src/components/Town/interactables/PosterViewer.tsx</li>
+  <li>frontend/src/components/Town/interactables/SelectPosterModal.tsx</li>
+</ul>
+
+<p>GradeScope will provide you with feedback on your submission, but note that it will <em>not</em> include any marks that will be assigned after we manually grade your submission for code style (it will show 0 for this until it is graded). It may take several minutes for the grading script to complete.</p>
+
+<p>GradeScope is configured to only provide feedback on at most 5 submissions per-24-hours per-student (submissions that fail to run or receive a grade of 0 are not counted in that limit). We strongly encourage you to lint and test your submission on your local development machine, and <em>not</em> rely on GradeScope for providing grading feedback - relying on GradeScope is a very slow feedback loop.
+To check for linter errors, run the command <code class="language-plaintext highlighter-rouge">npm run lint</code> from the terminal. The handout contains the same eslint configuration that is used by our grading script.</p>
+
+        
+
+        
+
+        
+
+  <hr>
+  <footer>
+    
+
+    <p class="text-small text-grey-dk-100 mb-0">&copy; 2023 Adeel Bhutta, Jan Vitek and Mitch Wand. Released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a> license</p>
+
+    
+  </footer>
+
+
+
+      </div>
+    </div>
+    
+      
+
+<div class="search-overlay"></div>
+
+    
+  </div>
+
+  
+</body>
+</html>
+
